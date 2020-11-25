@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Кэт энерджи</title>
+    <title>Кэт энерджи форма</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
@@ -38,195 +38,90 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Интернет-магазин Cat energy</h1>
-        <section class="promo">
-          <div class="promo__wrapper">
-            <header class="promo__header">
-              <h2 class="visually-hidden">
-                Промо сайта Cat energy
-              </h2>
-              <p class="promo__slogan">
-                Функциональное<br>питание для котов
-              </p>
-              <p class="promo__intro">
-                Занялся собой? Займись котом!
-              </p>
-              <button class="promo__button site-button" type="button">
-                подобрать программу
-              </button>
-            </header>
-          </div>
-        </section>
-        <section class="choise-programm">
-          <div class="choise-programm__wrapper">
-          <div class="lost-weight">
-            <ul class="lost-weight__list">
-              <li class="lost-weigth__list__item">
-                <img src="img/cat_back.png" width="50" height="53" alt="Сидящий кот">
-              </li>
-              <li class="lost-weigth__list__item">
-                <h2 class="choise-programm__h2">
-                  похудение
-                </h2>
-              </li>
-              <li class="lost-weigth__list__item">
-                <p class="text-mobile">
-                  Ваш кот весит больше собаки и<br>
-                  почти утратил способность лазить<br>
-                  по деревьям? Пора на диету! Cat<br>
-                  Energy Slim поможет вашему<br>
-                  питомцу сбросить лишний вес.
-                </p>
-                <hr>
-              </li>
+      <section class="selection-program">
+        <h2 class="selection-program__h2">
+          Подбор программы
+        </h2>
+        <p class="selection-programm__text">
+          Заполните анкету, и мы подберем<br>программу питания для вашего кота
+        </p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="selection-program__groupe1">
+            <label for="login-form" class="selection-program__groupe1-label">имя:*</label>
+            <input type="text" class="selection-program__groupe1-input" name="login" id="login-form" placeholder="барсик">
+            <label for="weigth-form" class="selection-program__groupe1-label">вес(кг):*</label>
+            <input type="text" class="selection-program__groupe1-input" name="weigth" id="weigth-form" placeholder="7">
+            <label for="years-form" class="selection-program__groupe1-label">возраст(лет):</label>
+            <input type="text" class="selection-program__groupe1-input" name="years" id="years-form" placeholder="7">
+          </fieldset>
+          <hr>
 
-              <li class="lost-weigth__list__item">
-                <a class="choise-programm__arrows" href="#">каталог slim</a>
-                <img src="img/icon_arrow.svg" width="24" height="12" alt="Стрелка вправо">
-              </li>
+          <fieldset class="selection-program__groupe2">
+          <input type="radio" class="selection-program__groupe2-radio" name="choise-one" value="Похудение" checked>
+          <p>похудение</p>
+          <input type="radio" class="selection-program__groupe2-radio" name="choise-two" value="Набор массы">
+          <p>Набор массы</p>
+          <input type="radio" class="selection-program__groupe2-radio" name="choise-three" value="Не знаю (нужен совет)">
+          <p>Не знаю (нужен совет)</p>
+        </fieldset>
+          <hr>
 
-            </ul>
-          </div>
-          <div class="weigth-gain">
-            <ul class="weigth-gain__list">
-              <li class="weigth-gain__list__item">
-                <img src="img/cat_back2.png" width="67" height="50" alt="Бегущий кот">
-              </li>
-              <li class="weigth-gain__list__item">
-                <h2 class="choise-programm__h2">
-                  похудение
-                </h2>
-              </li>
-              <li class="weigth-gain__list__item">
-                <p class="text-mobile">
-                  Заработать авторитет среди<br>
-                  дворовых котов и даже собак?<br>
-                  Серия Cat Energy Pro поможет<br>
-                  вашему коту нарастить<br>
-                  необходимые мышцы!
-                </p>
-                <hr>
-              </li>
-
-              <li class="weigth-gain__list__item">
-                <a class="choise-programm__arrows" href="#">каталог pro</a>
-                <img src="img/icon_arrow.svg" width="24" height="12" alt="Стрелка вправо">
-              </li>
-            </ul>
-          </div>
+          <h2 class="selection-program__text">Контактные данные<br>
+            (владельца кота)</h2>
+          <fieldset class="selection-program__groupe3">
+            <label for="email-form" class="selection-program__groupe3-label">e-mail:*</label>
+            <input type="email" class="selection-program__groupe3-input" name="email" id="email-form" placeholder="kuklachev@gmail.com">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="1.65" y1="5.71997" x2="1.65" y2="13.72" stroke="#222222" stroke-width="1.3"/>
+              <line x1="18.65" y1="5.71997" x2="18.65" y2="13.72" stroke="#222222" stroke-width="1.3"/>
+              <line x1="1" y1="13.07" x2="19" y2="13.07" stroke="#222222" stroke-width="1.3"/>
+              <line x1="1" y1="1.06997" x2="19" y2="1.06997" stroke="#222222" stroke-width="1.3"/>
+              <path d="M18.35 2.90207L10 9.39651L1.65 2.90206V1.36997H4.5L10 1.36997H15H18.35V2.90207Z" stroke="#222222" stroke-width="1.3"/>
+              </svg>
+            <label for="phone-form" class="selection-program__groupe3-label">Телефон:*</label>
+            <input type="tel" class="selection-program__groupe3-input" name="phone" id="phone-form" placeholder="8 (960) 900-60-90">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M17.9 9.4H9.39999V10.6H17.9L15.8 12.7L16.7 13.6L19.8 10.5C19.8974 10.3702 19.95 10.2123 19.95 10.05C19.95 9.88772 19.8974 9.72982 19.8 9.6L16.7 6.5L15.8 7.4L17.9 9.4Z" fill="black"/>
+              <path d="M8.10001 19.4V13.2C8.08846 13.0447 8.02154 12.8987 7.91142 12.7886C7.80131 12.6785 7.65531 12.6116 7.50001 12.6H3.10001C3.10516 12.9167 3.23325 13.2189 3.45718 13.4428C3.68112 13.6668 3.98336 13.7949 4.30001 13.8H6.80001V18.8H3.10001C2.86326 18.8149 2.62591 18.7825 2.40176 18.7048C2.17762 18.6271 1.97115 18.5057 1.79436 18.3475C1.61757 18.1893 1.47399 17.9976 1.37196 17.7834C1.26992 17.5693 1.21148 17.337 1.20001 17.1V3.10001C1.19181 2.6373 1.36516 2.18977 1.68292 1.85331C2.00069 1.51686 2.43758 1.31824 2.90001 1.30001H6.80001V6.30001H4.40001C4.08336 6.30516 3.78112 6.43324 3.55718 6.65718C3.33325 6.88112 3.20516 7.18336 3.20001 7.50001H7.60001C7.75531 7.48846 7.90131 7.42154 8.01142 7.31142C8.12154 7.2013 8.18846 7.05531 8.20001 6.90001V0.600012C8.15232 0.443872 8.06117 0.304534 7.93721 0.198285C7.81325 0.0920352 7.66161 0.0232649 7.50001 1.23734e-05H3.10001C2.70599 -0.0133408 2.31321 0.0511002 1.94411 0.189651C1.57501 0.328202 1.23684 0.538145 0.948933 0.807477C0.661026 1.07681 0.42903 1.40025 0.266207 1.7593C0.103385 2.11835 0.01293 2.50598 1.46306e-05 2.90001V16.8C-0.0289644 17.1977 0.0246504 17.597 0.157487 17.9729C0.290324 18.3489 0.499509 18.6932 0.771886 18.9844C1.04426 19.2756 1.37394 19.5072 1.74019 19.6648C2.10643 19.8224 2.50132 19.9024 2.90001 19.9H7.50001C7.5735 19.915 7.64943 19.9133 7.72216 19.895C7.7949 19.8767 7.86259 19.8423 7.92021 19.7942C7.97783 19.7462 8.02391 19.6859 8.05504 19.6176C8.08616 19.5494 8.10153 19.475 8.10001 19.4Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <textarea name="comment" class="selection-program__groupe3-textarea" id="comment-field" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <h2 class="selection-program__text">Дополнительно</h2>
+           <fieldset class="selection-program__groupe4">
+            <input type="checkbox" class="selection-program__groupe4-input" name="sweetener" id="sweetener-choice" checked>
+            <label for="sweetener-choice">сахарозаменитель</label>
+            <input type="checkbox" class="selection-program__groupe4-input" name="water" id="water-choice">
+            <label for="water-choice">питьевая вода</label>
+            <input type="checkbox" class="selection-program__groupe4-input" name="milk" id="milk-choice">
+            <label for="milk-choice">молоко</label>
+            <input type="checkbox" class="selection-program__groupe4-input" name="vitamins" id="vitamins">
+            <label for="vitamins">витамины</label>
+           </fieldset>
+           <input type="button" class="selection-program__button" value="отправить заявку">
+           <p>* — Обязательные поля</p>
+        </form>
+      </section>
+      <section class="invitation">
+        <div class="invitation__block1">
+          <h2 class="ivvitation__block1-h2">приглашаем<br>
+            к сотрудничеству<br> дилеров!</h2>
         </div>
-        </section>
-        <section class="special">
-          <h2 class="special__h2">Как это работает?</h2>
-          <div class="special__wrapper">
-            <ul class="special__list">
-              <li class="special__list__item">
-                <div class="special__box">
-                  <img src="img/icon-leaf.svg" width="30" height="32" alt="Листок" class="special__icon">
-                </div>
-                <p class="text-mobile">
-                  Функциональное питание<br>
-                  содержит только полезные<br>
-                  питательные вещества.
-                </p>
-              </li>
-              <li class="special__list__item">
-                <div class="special__box">
-                  <img src="img/icon-tub.svg" width="29" height="31" alt="Стакан воды" class="special__icon">
-                </div>
-                <p class="text-mobile">
-                  Выпускается в виде порошка,<br>
-                  который нужно лишь залить<br>
-                  кипятком и готово.
-                </p>
-              </li>
-              <li class="special__list__item">
-                <div class="special__box">
-                  <img src="img/icon-eat.svg" width="25" height="30" alt="Столовые приборы" class="special__icon">
-                </div>
-                <p class="text-mobile">
-                  Замените один-два приема<br>
-                  обычной еды на наше<br>
-                  функциональное питание.
-                </p>
-              </li>
-              <li class="special__list__item">
-                <div class="special__box">
-                  <img src="img/icon-alarm.svg" width="32" height="33" alt="Будильник" class="special__icon">
-                </div>
-                <p class="text-mobile">
-                  Уже через месяц<br>
-                  наслаждайтесь изменениями<br>
-                  к лучшему вашего питомца!
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="example">
-          <div class="example__wrapper">
-            <h2 class="example__h2">Живой пример</h2>
-            <div class="example__text">
-              <p>Борис сбросил 5 кг за 2 месяца, просто<br>
-                 заменив свой обычный корм на Cat<br>
-                  Energy Slim. Отличный результат без<br>
-                   изнуряющих тренировок! При этом он не<br>
-                    менял своих привычек и по-прежнему<br>
-                     спит по 16 часов в день. </p>
-            </div>
-            <div class="example__module">
-              <div class="example__module__item1">
-                <p>5 кг</p>
-                <p>снижение веса</p>
-              </div>
-              <div class="example__module__item2">
-                <p>60 дней</p>
-                <p>затрачено времени</p>
-              </div>
-            </div>
-            <p>затраты на питание: 15 000 руб.</p>
-            <div class="example__slider">
-              <ul class="example__slider__list">
-                <li class="example__slider__list__item">
-                  <img src="img/before-mobile1.png" width="311" height="232" alt="Толстый кот">
-                </li>
-                <li class="example__slider__list__item">
-                  <img src="img/after-mobile1.png" width="251" height="240" alt="Похудевший кот">
-                </li>
-              </ul>
-              <div class="example__scale">
-                <div class="example__bar"></div>
-                <button class="example__button">Было</button>
-                <button class="example__button">Стало</button>
-              </div>
-
-            </div>
-          </div>
-        </section>
-        <section class="contacts">
-          <div class="contacts__wrapper">
-            <div class="contacts__block1">
-              <p class="contacts__block1__text">
-                приглашаем<br>
-                к сотрудничеству дилеров!
-              </p>
-            </div>
-            <div class="contacts__block2">
-              <p class="contacts__block2__text">
-                ул. Большая<br>
-                Конюшенная, д. 19/8<br>
-                Санкт-Петербург
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="location">
-          <div class="location__wrapper">
-            <div class="location__map">
-              <img src="img/location.png" width="320" height="362"  alt="Карта">
-            </div>
-          </div>
-        </section>
+        <div class="invitation__block2">
+          <p class="invitation__block2-adress">
+            ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург
+          </p>
+        </div>
+        <div class="invitation__map">
+          <img src="img/location.png" width="320" height="362" alt="Карта">
+        </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -260,9 +155,3 @@
         </div>
       </div>
     </footer>
-
-
-
-
-  </body>
-</html>
