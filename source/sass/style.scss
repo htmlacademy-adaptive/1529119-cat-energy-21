@@ -1,12 +1,13 @@
 // Начните писать стили здесь
-@import "visually-hidden.scss";
-@import "variables.scss";
-@import "page-header.scss";
-@import "navigation.scss";
-@import "promo.scss";
-@import "choise-programm.scss";
-@import "special.scss";
-@import "example.scss";
-@import "contacts";
-@import "map.scss";
-@import "main-footer.scss"
+@import "utils/font.scss";
+@import "utils/visually-hidden.scss";
+@import "utils/variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/promo.scss";
+@import "blocks/choise-programm.scss";
+@import "blocks/special.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts";
+@import "blocks/map.scss";
+@import "blocks/main-footer.scss";

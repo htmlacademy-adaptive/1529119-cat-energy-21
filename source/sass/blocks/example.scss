@@ -2,7 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
 }
-.exmaple__container {
+.example__container {
   width: 320px;
   height: 705px;
   background-color: $background-grey;
@@ -11,7 +11,7 @@
 .example__h2 {
   font-size: 36px;
   line-height: 40px;
-  font-family: $fm;
+  font-family: $main-fonts;
   font-weight: 400;
   padding:  27px 0px 0px 20px;
 }
@@ -19,7 +19,7 @@
 .example__text {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Arial' sans-serif;
+  font-family: $second-fonts;
   font-weight: 400;
   color: $special-grey;
   padding:  0px 0px 0px 20px;
@@ -36,7 +36,7 @@
 .example__item-text {
   width: 124px;
   height: 56px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $border-color;
   border-radius: 3px;
   margin:  5px 15px 0px 0px;
   text-align: center;
@@ -46,7 +46,7 @@
 .example__h3 {
   font-size: 24px;
   line-height: 24px;
-  font-family: $fm;
+  font-family: $main-fonts;
   font-weight: 400;
   color: $base-color-text;
   margin: 15px 0px 0px 0px;
@@ -56,7 +56,7 @@
 .example__text-min {
   font-size: 12px;
   line-height: 12px;
-  font-family: 'Arial';
+  font-family: $second-fonts;
   font-weight: 400;
   color: $special-grey;
   margin:  10px 0px 0px 0px;
@@ -64,7 +64,7 @@
 .example__intro-slider {
   font-size: 14px;
   line-height: 20px;
-  font-family: $fm;
+  font-family: $main-fonts;
   font-weight: 400;
   color: $base-color-text;
   margin: 15px 0px 0px 0px;
@@ -95,18 +95,16 @@
   display: flex;
   align-items: center;
   margin:  27px 0px 0px 58px;
-
 }
 
 .example__button {
   font-size: 16px;
   line-height: 20px;
-  font-family: $fm;
+  font-family: $main-fonts;
   font-weight: 400;
   color: $base-color-text;
   text-transform: uppercase;
   border: none;
-
 }
 
 
