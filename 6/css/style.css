@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff") format("woff"), url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff"), url("../fonts/oswaldregular.woff2") format("woff2"); }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,7 +79,7 @@
 .promo__header {
   width: 320px;
   height: 480px;
-  background-image: url("/img/promo-background-cat.png");
+  background-image: url("../img/promo-cat.png");
   background-repeat: no-repeat;
   position: relative;
   margin: -30px 0px 0px 0px; }
@@ -91,7 +95,7 @@
   position: absolute;
   top: 165px;
   left: 20px;
-  background-image: url("/img/promo-bottle.png");
+  background-image: url("../img/promo-bottle.png");
   background-repeat: no-repeat; }
 
 .promo__slogan {
@@ -163,7 +167,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center; }
 
@@ -199,11 +203,11 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   display: flex;
   margin: 22px 0px 23px 25px; }
 
-.choise-programm__h2--two {
+.choise-programm__h2-two {
   font-size: 24px;
   line-height: 37px;
   color: #000000;
@@ -268,7 +272,7 @@
 .special__text {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Arial' sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   color: #444444; }
 
@@ -276,7 +280,7 @@
   max-width: 320px;
   margin: 0 auto; }
 
-.exmaple__container {
+.example__container {
   width: 320px;
   height: 705px;
   background-color: #EAEAEA; }
@@ -291,7 +295,7 @@
 .example__text {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Arial' sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   color: #444444;
   padding: 0px 0px 0px 20px; }
@@ -322,7 +326,7 @@
 .example__text-min {
   font-size: 12px;
   line-height: 12px;
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   color: #444444;
   margin: 10px 0px 0px 0px; }
@@ -398,7 +402,7 @@
 .contacts__text {
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Arial' sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   color: #444444; }
 
