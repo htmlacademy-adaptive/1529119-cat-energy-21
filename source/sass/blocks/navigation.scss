@@ -1,0 +1,36 @@
+
+.navigation {
+  display: none;
+}
+.navigation__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.navigation__list {
+  width: 320px;
+  height: 198px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: $main-fonts;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin:  -15px 0px 0px -40px;
+}
+
+.site-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 66px;
+  border-bottom: 1px solid $border-nav;
+ a {
+   color: $base-color-text;
+   text-decoration: none;
+
+ }
+
+}

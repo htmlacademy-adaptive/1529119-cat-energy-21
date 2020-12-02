@@ -1,0 +1,233 @@
+
+.selection-program__wrapper {
+  @include centr;
+}
+.selection-program__h1 {
+  @include main-fonts;
+  color: $base-color-text;
+  font-size: 36px;
+  line-height: 36px;
+  padding:  14px 0px 0px 20px;
+  margin:  0px 0px 0px 0px;
+
+}
+.selection-program__text {
+  @include main-fonts;
+  color: $base-color-text;
+  font-size: 14px;
+  line-height: 18px;
+  padding:  17px 0px 20px 20px;
+  margin:  0px 0px 0px 0px;
+  text-transform: uppercase;
+}
+.selection-program__groupe1,
+.selection-program__groupe2,
+.selection-program__groupe3,
+.selection-program__groupe4 {
+  border: none;
+}
+
+.selection-program__label {
+  @include main-fonts;
+  color: $special-grey;
+  font-size: 14px;
+  line-height: 18px;
+  margin:  0px 0px 0px 0px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  @include main-fonts;
+  font-size:  16px;
+  line-height: 18px;
+  color: $special-grey;
+  text-transform: uppercase;
+}
+
+
+.selection-program__input-name {
+  width: 229px;
+  height: 45px;
+  border: 1px solid $border-color2;
+  box-sizing: border-box;
+  margin:  19px 0px 14px 13px;
+ }
+
+ .selection-program__input-weight {
+  width: 204px;
+  height: 45px;
+  border: 1px solid $border-color2;
+  box-sizing: border-box;
+  margin:  0px 0px 14px 20px;
+ }
+
+ .selection-program__input-age {
+  width: 172px;
+  height: 45px;
+  border: 1px solid $border-color2;
+  box-sizing: border-box;
+  margin:  0px 0px 24px 21px;
+ }
+ .selection-program__input-email {
+  width: 219px;
+  height: 45px;
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+ }
+ .selection-program__input-phone {
+  width: 204px;
+  height: 45px;
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+ }
+
+.line {
+  width: 320px;
+  height: 1px;
+  background-color: $line-grey;
+  margin:  0px 0px 0px 0px;
+}
+.selection-program__groupe2 {
+  display: grid;
+  grid-template-columns:  10% 90%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.selection-program__text-radio {
+  @include main-fonts;
+  font-size: 16px;
+  line-height: 18px;
+  margin:  0px 0px 0px 0px;
+  text-transform: uppercase;
+  color: $radio;
+  margin:  15px 0px 0px 15px;
+}
+.selection-program__text-radio-lost {
+  margin:  15px 0px 15px 15px;
+}
+.selection-program__wrapper-contacts {
+  width: 301px;
+  height: 52px;
+  display: block;
+  position: relative;
+  margin:  26px 0px 35px 10px;
+}
+.selection-program__h2 {
+   @include main-fonts;
+   font-size: 24px;
+   line-height: 28px;
+ }
+ .selection-program__line-green-one {
+   width: 99px;
+   height: 2px;
+   background-color: $button-green;
+   position: absolute;
+   top: 15px;
+   right: -9px;
+ }
+ .selection-program__groupe3 {
+   position: relative;
+ }
+ .selection-program__input-email {
+   margin:  0px 0px 14px 12px;
+ }
+ .selection-program__input-phone {
+  margin:  0px 0px 5px 12px;
+ }
+ .selection-program__svg-email {
+   position: absolute;
+   left: 260px;
+   top: 20px;
+ }
+ .selection-program__svg-phone {
+  position: absolute;
+  left: 262px;
+  top: 78px;
+ }
+
+ .selection-program__h2-wrapper-comment {
+  width: 301px;
+  height: 26px;
+  display: block;
+  position: relative;
+  margin:  0px 0px 0px 10px;
+
+ }
+ .selection-program__line-green-two {
+  width: 148px;
+  height: 2px;
+  background-color: $button-green;
+  position: absolute;
+  top: 152px;
+  right: 0px;
+}
+.selection-program__textarea {
+  width: 260px;
+  height: 150px;
+  margin:  30px 0px 0px 17px;
+  @include main-fonts;
+  font-size: 15px;
+  line-height: 18px;
+  color: $special-grey;
+  text-transform: uppercase;
+}
+
+.selection-program__title3 {
+  position: relative;
+  margin:  0px 0px 0px 20px;
+}
+.selection-program__h2-wrapper-other {
+  width: 301px;
+  height: 26px;
+  display: block;
+ }
+
+ .selection-program__line-green-three {
+  width: 126px;
+  height: 2px;
+  background-color: $button-green;
+  position: absolute;
+  top: 17px;
+  right: 0px;
+}
+.selection-program__groupe4 {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.selection-program__text-checkbox {
+  @include main-fonts;
+  font-size: 16px;
+  line-height: 18px;
+  color: $base-color-text;
+  text-transform: uppercase;
+  margin:  0px 0px 24px 0px;
+}
+.selection-program__block-button {
+  position: relative;
+  width: 320px;
+  height: 110px;
+}
+.selection-program__button {
+  width: 280px;
+  height: 40px;
+  background-color: $button-green;
+  border: none;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $main-fonts;
+  color: $white;
+  text-transform: uppercase;
+  margin:  0px 0px 0px 22px;
+}
+.selection-program__legend {
+  @include second-fonts;
+  font-size: 14px;
+  line-height: 16px;
+  color: $base-color-text;
+  text-align: center;
+ padding:  40px 0px 16px 0px;
+}

@@ -1,1 +1,11 @@
 // Начните писать стили здесь
+@import "utils/font.scss";
+@import "utils/visually-hidden.scss";
+@import "utils/variables.scss";
+@import "utils/mixin.scss";
+@import "blocks/page-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/selection-program.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/main-footer.scss";
