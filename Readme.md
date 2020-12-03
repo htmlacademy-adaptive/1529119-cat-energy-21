@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Аксенов](https://up.htmlacademy.ru/adaptive/21/user/1529119).
-* Наставник: `Неизвестно`.
+* Наставник: `Михаил Кислый`.
 
 ---
 
