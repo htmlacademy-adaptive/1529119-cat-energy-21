@@ -1,6 +1,5 @@
 .special__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
+  @include center;
 }
 
 .special__h2 {
@@ -20,12 +19,14 @@
   width: 279px;
   height: 300px;
 }
+
 .special__item {
   display: flex;
   flex-direction: row;
   width: 300px;
   height: 60px;
 }
+
 .special__box {
   width: 60px;
   height: 60px;
@@ -45,9 +46,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin:  0px 0px 0px 20px;
-
+  margin: 0px 0px 0px 20px;
 }
+
 .special__text {
   font-size: 14px;
   line-height: 18px;

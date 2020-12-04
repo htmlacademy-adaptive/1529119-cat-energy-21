@@ -1,19 +1,19 @@
 .example__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
+  @include center;
 }
+
 .example__container {
   width: 320px;
   height: 705px;
   background-color: $background-grey;
-
 }
+
 .example__h2 {
   font-size: 36px;
   line-height: 40px;
   font-family: $main-fonts;
   font-weight: 400;
-  padding:  27px 0px 0px 20px;
+  padding: 27px 0px 0px 20px;
 }
 
 .example__text {
@@ -22,25 +22,23 @@
   font-family: $second-fonts;
   font-weight: 400;
   color: $special-grey;
-  padding:  0px 0px 0px 20px;
+  padding: 0px 0px 0px 20px;
 }
 
 .example__module {
   width: 280px;
   height: 64px;
   display: flex;
-  margin:  0px 0px 0px 20px;
-
-
+  margin: 0px 0px 0px 20px;
 }
+
 .example__item-text {
   width: 124px;
   height: 56px;
   border: 1px solid $border-color;
   border-radius: 3px;
-  margin:  5px 15px 0px 0px;
+  margin: 5px 15px 0px 0px;
   text-align: center;
-
 }
 
 .example__h3 {
@@ -59,8 +57,9 @@
   font-family: $second-fonts;
   font-weight: 400;
   color: $special-grey;
-  margin:  10px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
+
 .example__intro-slider {
   font-size: 14px;
   line-height: 20px;
@@ -70,7 +69,7 @@
   margin: 15px 0px 0px 0px;
   text-transform: uppercase;
   text-align: center;
-  padding:  17px 0px 0px 0px;
+  padding: 17px 0px 0px 0px;
 }
 
 .example__slider {
@@ -83,18 +82,19 @@
 }
 
 .example__img1 {
-  margin:  21px 0px 0px -20px;
+  margin: 21px 0px 0px -20px;
 }
 
 .example__img2 {
   display: none;
 }
+
 .example__scale {
   width: 228px;
   height: 40px;
   display: flex;
   align-items: center;
-  margin:  27px 0px 0px 58px;
+  margin: 27px 0px 0px 58px;
 }
 
 .example__button {
@@ -106,5 +106,3 @@
   text-transform: uppercase;
   border: none;
 }
-
-

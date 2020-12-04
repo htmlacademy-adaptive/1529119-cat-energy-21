@@ -1,24 +1,27 @@
 .contacts__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
+  @include center;
 }
+
 .contacts__invitation {
   width: 320px;
   height: 114px;
-  background-color: $background;
+  background-color: $background-grey;
   display: flex;
+  margin: -20px 0px 0px 0px;
 }
 
 .contacts__block1 {
   width: 320px;
   height: 114px;
-  margin:  14px 2px 0px 19px;
+  margin: 14px 2px 0px 19px;
 }
+
 .contacts__block2 {
   width: 320px;
   height: 114px;
-  margin:  14px 2px 0px 0px;
+  margin: 14px 2px 0px 0px;
 }
+
 .contacts__h3 {
   font-size: 16px;
   line-height: 18px;
@@ -27,6 +30,7 @@
   text-transform: uppercase;
   color: $special-black;
 }
+
 .contacts__text {
   font-size: 14px;
   line-height: 20px;

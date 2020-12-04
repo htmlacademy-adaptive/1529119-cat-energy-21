@@ -1,7 +1,5 @@
-
 .choise-programm__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
+  @include center;
 }
 
 .choise-programm__lost-weight,
@@ -10,28 +8,31 @@
   height: 266px;
   background-color: $background-grey;
 }
+
 .choise-programm__lost-weight {
-  margin:  20px 0px 0px 20px;
+  margin: 20px 0px 0px 20px;
 }
+
 .choise-programm__weight-gain {
-  margin:  20px 0px 0px 20px;
+  margin: 20px 0px 0px 20px;
 }
 
 .choise-programm__block1 {
   display: flex;
-  margin:  0px 0px 0px 22px;
+  margin: 0px 0px 0px 22px;
 }
 
 .choise-programm__img {
-  margin:  22px 0px 0px 0px;
+  margin: 22px 0px 0px 0px;
 }
+
 .choise-programm__h2 {
   font-size: 24px;
   line-height: 37px;
   color: $base-color-text;
   text-transform: uppercase;
   font-family: $main-fonts;
-  margin:  30px 0px 0px 19px;
+  margin: 30px 0px 0px 19px;
   font-weight: normal;
 }
 
@@ -50,7 +51,7 @@
   width: 240px;
   height: 1px;
   background-color: $line-grey;
-  margin:  0px 0px 0px 25px;
+  margin: 0px 0px 0px 25px;
 }
 
 .choise-programm__block2 {
@@ -59,7 +60,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin:  19px 174px 22px 22px;
+  margin: 19px 174px 22px 22px;
 }
 
 .choise-programm__arrows {
@@ -70,17 +71,19 @@
   line-height: 16px;
   font-family: $main-fonts;
 }
+
 .choise-programm__block3 {
   display: flex;
-  margin:  0px 0px 0px 13px;
+  margin: 0px 0px 0px 13px;
 }
+
 .choise-programm__text2 {
   font-size: 14px;
   line-height: 18px;
   color: $special-grey;
   font-family: $second-fonts;
   display: flex;
-  margin:  22px 0px 23px 25px;
+  margin: 22px 0px 23px 25px;
 }
 
 .choise-programm__h2-two {
@@ -90,7 +93,7 @@
   text-transform: uppercase;
   font-family: $main-fonts;
   font-weight: 400;
-  margin:  30px 0px 0px 19px;
+  margin: 30px 0px 0px 19px;
 }
 
 .choise-programm__block4 {
@@ -99,5 +102,5 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin:  15px 0px 0px 22px;
+  margin: 15px 0px 0px 22px;
 }
