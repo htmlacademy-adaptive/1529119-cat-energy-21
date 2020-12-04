@@ -3,8 +3,7 @@
 }
 
 .navigation__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
+  @include center;
 }
 
 .navigation__list {
@@ -18,7 +17,7 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  margin:  -15px 0px 0px -40px;
+  margin: -15px 0px 0px -40px;
 }
 
 .site-list__item {
@@ -27,10 +26,9 @@
   justify-content: center;
   height: 66px;
   border-bottom: 1px solid $border-nav;
- a {
-   color: $base-color-text;
-   text-decoration: none;
+}
 
- }
-
+.site-list__item a {
+  color: $base-color-text;
+  text-decoration: none;
 }

@@ -1,8 +1,8 @@
 .map__wrapper {
-  max-width: 320px;
-  margin: 0 auto;
+  @include center;
 }
+
 .map__contacts {
   width: 320px;
-  height: 362px ;
+  height: 362px;
 }

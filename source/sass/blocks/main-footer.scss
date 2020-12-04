@@ -1,6 +1,5 @@
 .main-footer__wrapper {
- max-width: 320px;
- margin: 0 auto;
+  @include center;
 }
 
 .main-footer__block {
@@ -8,8 +7,9 @@
   height: 226px;
   background-color: $background-grey;
 }
+
 .main-footer__img {
-  margin:  36px 0px 20px 96px;
+  margin: 36px 0px 20px 96px;
 }
 
 .main-footer__line {
@@ -18,12 +18,13 @@
   width: 280px;
   height: 1px;
   background-color: $line-grey;
-  margin:  0px 0px 0px 25px;
+  margin: 0px 0px 0px 25px;
 }
+
 .main-footer__icons {
   width: 130px;
   height: 22px;
-  margin:  0px 0px 20px 60px;
+  margin: 0px 0px 20px 60px;
 }
 
 .main-footer__list {
@@ -31,12 +32,13 @@
   display: flex;
   justify-content: space-between;
 }
+
 .main-footer__item {
-  margin:  0px 30px 0px 0px;
+  margin: 0px 30px 0px 0px;
 }
+
 .main-footer__html-logo {
   width: 281px;
   height: 34px;
-  margin:  22px 0px -10px 25px;
-
+  margin: 22px 0px -10px 25px;
 }
