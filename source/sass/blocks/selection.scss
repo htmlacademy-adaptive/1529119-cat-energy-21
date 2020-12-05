@@ -7,8 +7,9 @@
   color: $base-color-text;
   font-size: 36px;
   line-height: 36px;
-  padding: 14px 0px 0px 20px;
-  margin: 0px 0px 0px 0px;
+  padding-top: 14px;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .selection-program__text {
@@ -16,8 +17,10 @@
   color: $base-color-text;
   font-size: 14px;
   line-height: 18px;
-  padding: 17px 0px 20px 20px;
-  margin: 0px 0px 0px 0px;
+  padding-top: 17px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -33,7 +36,7 @@
   color: $special-grey;
   font-size: 14px;
   line-height: 18px;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -50,7 +53,9 @@ input::placeholder {
   height: 45px;
   border: 1px solid $border-color2;
   box-sizing: border-box;
-  margin: 19px 0px 14px 13px;
+  margin-top: 19px;
+  margin-bottom: 14px;
+  margin-left: 13px;
 }
 
 .selection-program__input-weight {
@@ -58,7 +63,8 @@ input::placeholder {
   height: 45px;
   border: 1px solid $border-color2;
   box-sizing: border-box;
-  margin: 0px 0px 14px 20px;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 .selection-program__input-age {
@@ -66,7 +72,8 @@ input::placeholder {
   height: 45px;
   border: 1px solid $border-color2;
   box-sizing: border-box;
-  margin: 0px 0px 24px 21px;
+  margin-bottom: 24px;
+  margin-left: 21px;
 }
 
 .selection-program__input-email {
@@ -74,7 +81,8 @@ input::placeholder {
   height: 45px;
   border: 1px solid $border-color;
   box-sizing: border-box;
-  margin: 0px 0px 14px 12px;
+  margin-bottom: 14px;
+  margin-left: 12px;
 }
 
 .selection-program__input-phone {
@@ -82,7 +90,8 @@ input::placeholder {
   height: 45px;
   border: 1px solid $border-color;
   box-sizing: border-box;
-  margin: 0px 0px 5px 12px;
+  margin-bottom: 5px;
+  margin-left: 12px;
 }
 
 .selection-program__groupe2 {
@@ -97,11 +106,14 @@ input::placeholder {
   line-height: 18px;
   text-transform: uppercase;
   color: $radio;
-  margin: 15px 0px 0px 15px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .selection-program__text-radio-lost {
-  margin: 15px 0px 15px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 .selection-program__wrapper-contacts {
@@ -109,7 +121,9 @@ input::placeholder {
   height: 52px;
   display: block;
   position: relative;
-  margin: 26px 0px 35px 10px;
+  margin-top: 26px;
+  margin-bottom: 35px;
+  margin-left: 10px;
 }
 
 .selection-program__h2 {
@@ -148,7 +162,7 @@ input::placeholder {
   height: 26px;
   display: block;
   position: relative;
-  margin: 0px 0px 0px 10px;
+  margin-bottom: 10px;
 }
 
 .selection-program__line-green-two {
@@ -157,14 +171,15 @@ input::placeholder {
   background-color: $button-green;
   position: absolute;
   top: 152px;
-  right: 0px;
+  right: 0;
 }
 
 .selection-program__textarea {
   @include main-fonts;
   width: 260px;
   height: 150px;
-  margin: 30px 0px 0px 17px;
+  margin-top: 30px;
+  margin-left: 17px;
   font-size: 15px;
   line-height: 18px;
   color: $special-grey;
@@ -173,7 +188,7 @@ input::placeholder {
 
 .selection-program__title3 {
   position: relative;
-  margin: 0px 0px 0px 20px;
+  margin-bottom: 20px;
 }
 
 .selection-program__h2-wrapper-other {
@@ -188,7 +203,7 @@ input::placeholder {
   background-color: $button-green;
   position: absolute;
   top: 17px;
-  right: 0px;
+  right: 0;
 }
 
 .selection-program__groupe4 {
@@ -203,7 +218,7 @@ input::placeholder {
   line-height: 18px;
   color: $base-color-text;
   text-transform: uppercase;
-  margin: 0px 0px 24px 0px;
+  margin-bottom: 24px;
 }
 
 .selection-program__block-button {
@@ -219,13 +234,13 @@ input::placeholder {
   border: none;
   position: absolute;
   top: -20px;
-  left: 0px;
+  left: 0;
   font-size: 14px;
   line-height: 18px;
   font-family: $main-fonts;
   color: $white;
   text-transform: uppercase;
-  margin: 0px 0px 0px 22px;
+  margin-bottom: 22px;
 }
 
 .selection-program__legend {
@@ -234,5 +249,6 @@ input::placeholder {
   line-height: 16px;
   color: $base-color-text;
   text-align: center;
-  padding: 40px 0px 16px 0px;
+  padding-top: 40px;
+  padding-bottom: 16px;
 }

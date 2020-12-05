@@ -7,19 +7,22 @@
   height: 114px;
   background-color: $background-grey;
   display: flex;
-  margin: -20px 0px 0px 0px;
+  margin-top: -20px;
 }
 
 .contacts__block1 {
   width: 320px;
   height: 114px;
-  margin: 14px 2px 0px 19px;
+  margin-top: 14px;
+  margin-right: 2px;
+  margin-left: 19px;
 }
 
 .contacts__block2 {
   width: 320px;
   height: 114px;
-  margin: 14px 2px 0px 0px;
+  margin-top: 14px;
+  margin-right: 2px;
 }
 
 .contacts__h3 {
