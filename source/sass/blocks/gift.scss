@@ -1,0 +1,23 @@
+.gift__wrapper {
+  @include center;
+}
+
+.gift__block {
+  width: 280px;
+  height: 289px;
+  margin: 39px 0px 35px 20px;
+  background-image: url("../img/giftphoto.png");
+}
+
+.gift__img {
+  margin: 58px 0px 0px 101px;
+}
+
+.gift__text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $second-fonts;
+  color: $background;
+  padding: 20px 0px 0px 60px;
+}

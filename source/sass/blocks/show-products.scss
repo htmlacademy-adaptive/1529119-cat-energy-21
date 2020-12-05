@@ -1,0 +1,49 @@
+.show-products__wrapper {
+  @include center;
+}
+
+.show-products__block {
+  width: 279px;
+  height: 178px;
+  margin: 25px 0px 28px 20px;
+}
+
+.show-products__h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 23px 0px 0px 0px;
+}
+
+.show-products__img {
+  margin: 0px 0px 0px 125px;
+}
+
+.show-products__text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $second-fonts;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 8px 0px 19px 0px;
+}
+
+.show-products__button {
+  width: 279px;
+  height: 60px;
+  background-color: $background-grey;
+  border: none;
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-style: normal;
+}
