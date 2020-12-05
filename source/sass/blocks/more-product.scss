@@ -1,0 +1,85 @@
+.more-product__wrapper {
+  @include center;
+}
+
+.more-product__title {
+  width: 320px;
+  height: 85px;
+  display: flex;
+}
+
+.more-product__h2 {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $main-fonts;
+  color: $base-color-text;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.more-product__line-green {
+  width: 53px;
+  height: 2px;
+  background-color: $button-green;
+  margin-top: 40px;
+  margin-left: 34px;
+}
+
+.more-product__line-grey {
+  width: 280px;
+  height: 1px;
+  background-color: $line-grey;
+  margin-top: -5px;
+  margin-left: 20px;
+}
+
+.more-product__block {
+  width: 280px;
+  height: 129px;
+  margin-left: 20px;
+}
+
+.more-product__h3 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: $radio;
+  font-family: $main-fonts;
+  text-transform: uppercase;
+}
+
+.more-product__colum {
+  width: 280px;
+  height: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -13px;
+}
+
+.more-product__text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: $special-grey;
+  font-family: $second-fonts;
+}
+
+.more-product__button {
+  width: 280px;
+  height: 40px;
+  background-color: $button-green;
+  color: $background;
+  font-family: $main-fonts;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  border: none;
+  margin-top: 35px;
+}
