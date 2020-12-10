@@ -19,6 +19,7 @@
   flex-direction: column;
   margin-top: -15px;
   margin-left: -40px;
+  outline-offset: -5px;
 }
 
 .site-list__item {
@@ -32,4 +33,22 @@
 .site-list__item a {
   color: $base-color-text;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    width: 440px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    width: 448px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+  }
 }

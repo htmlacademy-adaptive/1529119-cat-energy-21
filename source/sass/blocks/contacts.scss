@@ -41,3 +41,26 @@
   font-weight: 400;
   color: $special-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__invitation {
+    width: 768px;
+    height: 201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $background;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__invitation {
+    width: 570px;
+    height: 201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $background;
+    position: absolute;
+  }
+}

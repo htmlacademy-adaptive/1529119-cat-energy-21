@@ -62,3 +62,21 @@
   text-transform: uppercase;
   margin-left: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__header {
+    width: 710px;
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__header {
+    width: 1323px;
+    height: 553px;
+    display: flex;
+    flex-direction: row;
+  }
+}
