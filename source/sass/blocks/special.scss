@@ -56,3 +56,23 @@
   font-weight: 400;
   color: $special-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .special__list {
+    width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special__list {
+    width: 1224px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+}
