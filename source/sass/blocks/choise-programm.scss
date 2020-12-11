@@ -136,19 +136,17 @@
 
 @media (min-width: $desktop-width) {
   .choise-programm__wrapper {
-    width: 1220px;
+    width: 1440px;
     height: 374px;
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
   }
 
-  .choise-programm__lost-weight {
-    width: 570px;
-    height: 374px;
-  }
-
+  .choise-programm__lost-weight,
   .choise-programm__weight-gain {
     width: 570px;
     height: 374px;
+    margin: 0;
   }
 }

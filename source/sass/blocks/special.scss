@@ -60,10 +60,10 @@
 @media (min-width: $tablet-width) {
   .special__list {
     width: 708px;
-    height: 597px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin: 0;
   }
 }
 
@@ -73,5 +73,6 @@
     height: 280px;
     display: flex;
     flex-direction: row;
+    margin: 0;
   }
 }

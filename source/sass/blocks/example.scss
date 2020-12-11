@@ -114,18 +114,20 @@
 @media (min-width: $tablet-width) {
   .example__container {
     width: 768px;
-    height: 1038px;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example__container {
     width: 1440px;
-    height: 656px;
+    height: 600px;
     display: flex;
     flex-direction: row;
+    margin: 0;
   }
 
   .example__module {
