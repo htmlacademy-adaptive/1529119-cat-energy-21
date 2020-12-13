@@ -14,7 +14,6 @@
   font-family: $main-fonts;
   font-weight: 400;
   padding-top: 27px;
-  padding-left: 20px;
 }
 
 .example__text {
@@ -23,14 +22,12 @@
   font-family: $second-fonts;
   font-weight: 400;
   color: $special-grey;
-  padding-left: 20px;
 }
 
 .example__module {
   width: 280px;
   height: 64px;
   display: flex;
-  margin-left: 20px;
 }
 
 .example__item-text {
@@ -81,11 +78,11 @@
 
 .example__list {
   list-style: none;
+  padding: 0;
 }
 
 .example__img1 {
   margin-top: 21px;
-  margin-left: -20px;
 }
 
 .example__img2 {
@@ -117,7 +114,6 @@
     height: 800px;
     display: flex;
     flex-direction: column;
-    margin: 0;
   }
 }
 
@@ -127,7 +123,6 @@
     height: 600px;
     display: flex;
     flex-direction: row;
-    margin: 0;
   }
 
   .example__module {
