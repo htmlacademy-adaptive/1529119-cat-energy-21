@@ -13,3 +13,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@mixin padding-zero {
+  padding: 0;
+}
