@@ -114,3 +114,39 @@
   margin-top: 15px;
   margin-left: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .choise-programm__wrapper {
+    width: 768px;
+    height: 774px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .choise-programm__lost-weight {
+    width: 708px;
+    height: 372px;
+  }
+
+  .choise-programm__weight-gain {
+    width: 708px;
+    height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choise-programm__wrapper {
+    width: 1440px;
+    height: 374px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .choise-programm__lost-weight,
+  .choise-programm__weight-gain {
+    width: 570px;
+    height: 374px;
+    margin: 0;
+  }
+}

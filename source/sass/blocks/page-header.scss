@@ -1,27 +1,21 @@
-.page-header {
-  height: 66px;
-}
-
 .page-header__wrapper {
   @include center;
   font-family: $main-fonts;
   background-color: $background;
-  border-bottom: 1px solid $border-nav;
 }
 
 .page-header__logo {
-  width: 280px;
-  height: 38px;
+  width: 320px;
+  height: 66px;
   display: flex;
-  margin-top: 13px;
-  margin-right: 30px;
-  margin-bottom: 14px;
-  margin-left: 20px;
+  border-bottom: 1px solid $border-nav;
 }
 
 .page-header__list {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .page-header__item {
@@ -30,10 +24,97 @@
 }
 
 .page-header__img1 {
-  margin-right: 55px;
-  margin-left: -40px;
+  margin-right: 65px;
 }
 
 .page-header__img2 {
-  margin-right: 60px;
+  margin-right: 90px;
+}
+
+.navigation__list {
+  width: 320px;
+  height: 198px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: $main-fonts;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 66px;
+  border-bottom: 1px solid $border-nav;
+}
+
+.site-list__item a {
+  color: $base-color-text;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    width: 768px;
+    height: 54px;
+    display: flex;
+  }
+
+  .page-header__logo {
+    height: 52px;
+    width: 174px;
+    border-bottom: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    width: 440px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1440px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    width: 225px;
+    height: 112px;
+    border-bottom: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    width: 448px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+  }
 }
