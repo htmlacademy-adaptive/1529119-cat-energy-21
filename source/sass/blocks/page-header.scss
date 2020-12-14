@@ -31,7 +31,7 @@
   margin-right: 90px;
 }
 
-.navigation__list {
+.navigation-main__list {
   width: 320px;
   height: 198px;
   list-style: none;
@@ -77,7 +77,7 @@
     display: none;
   }
 
-  .navigation__list {
+  .navigation-main__list {
     width: 440px;
     height: 36px;
     display: flex;
@@ -107,7 +107,7 @@
     display: none;
   }
 
-  .navigation__list {
+  .navigation-main__list {
     width: 448px;
     height: 40px;
     display: flex;
@@ -120,7 +120,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .navigation__main-form {
+  .navigation-main__form {
     display: none;
   }
 }
