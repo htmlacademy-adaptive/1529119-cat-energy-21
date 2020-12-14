@@ -51,6 +51,16 @@
     justify-content: space-around;
     background-color: $background;
   }
+
+  .contacts__invitation-form {
+    width: 768px;
+    height: 201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $background-grey;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
