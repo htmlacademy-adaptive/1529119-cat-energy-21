@@ -2,6 +2,11 @@
   @include center;
 }
 
+.catalog__title {
+  width: 320px;
+  height: 36px;
+}
+
 .catalog__h2 {
   font-size: 36px;
   line-height: 36px;
@@ -129,4 +134,126 @@
   position: absolute;
   top: -30px;
   left: 20px;
+}
+
+.catalog__show-products-block {
+  width: 279px;
+  height: 178px;
+  margin-top: 25px;
+  margin-bottom: 28px;
+  margin-left: 20px;
+}
+
+.catalog__show-products-h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 23px;
+}
+
+.catalog__show-products-img {
+  margin-left: 125px;
+}
+
+.catalog__show-products-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $second-fonts;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 19px;
+}
+
+.catalog__show-products-button {
+  width: 279px;
+  height: 60px;
+  background-color: $background-grey;
+  border: none;
+  color: $special-grey;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.catalog__show-products-line {
+  width: 320px;
+  height: 1px;
+  background-color: $line-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__line {
+    display: none;
+  }
+
+  .catalog__title {
+    width: 768px;
+    height: 60px;
+  }
+
+  .catalog__wrapper {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog__groupe1,
+  .catalog__groupe2 {
+    width: 324px;
+    height: 430px;
+  }
+
+  .catalog__show-products-block {
+    width: 324px;
+    height: 429px;
+    border: 2px solid $background-grey;
+  }
+
+  .catalog__show-products-line {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__line {
+    display: none;
+  }
+
+  .catalog__title {
+    width: 1440px;
+    height: 60px;
+  }
+
+  .catalog__wrapper {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .catalog__groupe1,
+  .catalog__groupe2 {
+    width: 245px;
+    height: 512px;
+  }
+
+  .catalog__show-products-block {
+    width: 245px;
+    height: 430px;
+    border: 2px solid $background-grey;
+  }
+
+  .catalog__show-products-line {
+    display: none;
+  }
 }

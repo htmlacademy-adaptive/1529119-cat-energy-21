@@ -25,3 +25,30 @@
   padding-top: 20px;
   padding-left: 60px;
 }
+
+@media (min-width: $tablet-width) {
+  .gift__wrapper {
+    width: 768px;
+  }
+
+  .gift__block {
+    min-width: 708px;
+    height: 200px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__wrapper {
+    width: 1440px;
+    position: relative;
+  }
+
+  .gift__block {
+    min-width: 245px;
+    height: 289px;
+    position: absolute;
+    top: -515px;
+    left: 980px;
+  }
+}
