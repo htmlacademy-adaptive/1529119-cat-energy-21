@@ -2,6 +2,9 @@
   @include center;
   font-family: $main-fonts;
   background-color: $background;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .page-header__logo {
@@ -14,8 +17,7 @@
 .page-header__list {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  justify-content: space-between;
 }
 
 .page-header__item {
@@ -23,12 +25,76 @@
   align-self: center;
 }
 
+.navigation-main__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: $background;
+  margin-top: 8px;
+}
+
+.navigation-main--closed .navigation-main__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: $base-color-text;
+  box-shadow: 0 8px 0 0 $base-color-text, 0 16px 0 0 $base-color-text;
+}
+
+.navigation-main--closed .navigation-main__toggle:active::before {
+  background-color: fade($base-color-text, 30%);
+  box-shadow: 0 8px 0 0 fade($base-color-text, 30%),
+    0 16px 0 0 fade($base-color-text, 30%);
+}
+
+.navigation-main--opened .navigation-main__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: $base-color-text;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($base-color-text, 30%);
+  }
+}
+
+.page-header__tabletlink,
+.page-header__desktoplink {
+  display: none;
+}
+
 .page-header__img1 {
+  margin-left: -20px;
   margin-right: 65px;
 }
 
 .page-header__img2 {
-  margin-right: 90px;
+  margin-right: 65px;
 }
 
 .navigation-main__list {
@@ -62,60 +128,122 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    width: 768px;
+    max-width: 768px;
     height: 54px;
     display: flex;
+    margin-top: 10px;
   }
 
   .page-header__logo {
-    height: 52px;
-    width: 174px;
     border-bottom: none;
+    width: 174px;
+    height: 52px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
   }
 
-  .page-header__toggle {
+  .navigation-main__toggle,
+  .page-header__list {
     display: none;
   }
 
+  .page-header__tabletlink {
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+
   .navigation-main__list {
-    width: 440px;
-    height: 36px;
+    width: 594px;
+    height: 52px;
     display: flex;
     flex-direction: row;
+    flex: wrap;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
   }
 
   .site-list__item {
     border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0;
+
+    &:first-child {
+      margin-right: -40px;
+    }
+  }
+
+  .site-list__item a {
+    padding-bottom: 5px;
+  }
+
+  .site-list__item--active a {
+    border-bottom: 2px solid $button-green;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     width: 1440px;
-    height: 60px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: relative;
   }
 
   .page-header__logo {
-    width: 225px;
-    height: 112px;
+    width: 202px;
     border-bottom: none;
+    cursor: pointer;
+    margin-top: 82px;
+    margin-left: 110px;
   }
 
-  .page-header__toggle {
+  .navigation-main__toggle,
+  .page-header__list,
+  .page-header__tabletlink {
     display: none;
   }
 
+  .page-header__desktoplink {
+    display: block;
+  }
+
   .navigation-main__list {
-    width: 448px;
-    height: 40px;
+    width: 720px;
+    height: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-left: 408px;
+    background-color: $background-green;
   }
 
   .site-list__item {
     border-bottom: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $main-fonts;
+    font-weight: 400;
+    margin-left: 45px;
+
+    &:last-child {
+      margin-right: 110px;
+    }
+  }
+
+  .site-list__item a {
+    color: $background;
+  }
+
+  .site-list__item--active a {
+    border-bottom: 2px solid $background;
   }
 }
 

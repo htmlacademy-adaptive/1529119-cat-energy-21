@@ -6,6 +6,8 @@
   width: 320px;
   height: 226px;
   background-color: $background-grey;
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer__img {
@@ -41,35 +43,128 @@
 }
 
 .main-footer__html-logo {
-  width: 281px;
+  width: 171px;
   height: 34px;
   margin-top: 22px;
   margin-bottom: -10px;
-  margin-left: 25px;
+  margin-left: 75px;
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer__block {
-    width: 768px;
+  .main-footer__wrapper {
+    max-width: 768px;
     height: 150px;
+    background-color: $background-grey;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-footer__block {
+    width: 708px;
+    height: 60px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    padding-top: 55px;
+  }
+
+  .main-footer__img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-footer__list {
+    width: 129px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-footer__item {
+    margin-left: -5px;
+    padding: 0;
+
+    &:nth-child(1) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 5px;
+    }
   }
 
   .main-footer__line {
     display: none;
   }
+
+  .main-footer__html-logo {
+    width: 163px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    max-width: 1440px;
+    height: 149px;
+  }
+
   .main-footer__block {
     width: 1440px;
     height: 149px;
     display: flex;
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
   }
 
   .main-footer__line {
     display: none;
+  }
+
+  .main-footer__list {
+    width: 129px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-left: 160px;
+  }
+
+  .main-footer__item {
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(1) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 5px;
+    }
+  }
+
+  .main-footer__html-logo {
+    width: 163px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 325px;
   }
 }
