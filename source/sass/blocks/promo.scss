@@ -1,5 +1,6 @@
 .promo__wrapper {
   @include center;
+  max-width: 320px;
 }
 
 .promo__header {
@@ -53,7 +54,7 @@
   background-color: $button-green;
   border: none;
   position: absolute;
-  top: 440px;
+  top: 420px;
   left: 0;
   font-size: 14px;
   line-height: 18px;
@@ -61,44 +62,140 @@
   color: $white;
   text-transform: uppercase;
   margin-left: 22px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .promo__wrapper {
-    width: 768px;
-  }
-
-  .promo__header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+    max-width: 768px;
+    margin: 0;
     padding: 0;
   }
 
+  .promo__header {
+    width: 768px;
+    height: 769px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    padding: 0;
+    background-image: none;
+    position: relative;
+  }
+
   .promo__block1 {
-    width: 100%;
+    width: 440px;
+    height: 160px;
+    background-color: $background;
+    margin-left: 100px;
+    padding: 0;
+  }
+
+  .promo__slogan {
+    color: $base-color-text;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    font-family: $main-fonts;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .promo__intro {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    color: $base-color-text;
+    text-transform: uppercase;
+    text-align: start;
+    padding-top: 20px;
+    margin: 0;
   }
 
   .promo__block2 {
-    width: 420px;
+    width: 709px;
+    height: 609px;
+    display: block;
+    background-image: url("../img/bottle-tablet.png");
+    margin-top: 20px;
+  }
+
+  .promo__site-button {
+    width: 244px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: 195px;
+    left: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__wrapper {
-    width: 1440px;
+    min-width: 1440px;
+    margin-top: 145px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/cat-desktop-big.png");
+    background-position: 100% 100%;
+    background-size: auto;
+    margin-right: 0;
   }
 
   .promo__header {
-    width: 100%;
+    width: 1320px;
+    height: 694px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background-color: $background-green;
+    margin-top: -140px;
+    margin-left: 120px;
+    margin-right: 0;
+    outline: 2px solid $background;
   }
 
   .promo__block1 {
-    width: 100%;
+    width: 600px;
+    height: 700px;
+    background-color: $background;
+    padding: 0;
+    margin-top: 2px;
+    margin-left: 0;
   }
 
   .promo__block2 {
-    width: 570px;
+    display: block;
+    background-image: url("../img/index-can.png");
+    margin-left: 420px;
+    margin-top: -40px;
+  }
+
+  .promo__slogan {
+    margin-top: 190px;
+    margin-left: 70px;
+    margin-bottom: 15px;
+  }
+
+  .promo__intro {
+    margin-left: 70px;
+  }
+
+  .promo__site-button {
+    width: 244px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: 410px;
+    left: 50px;
   }
 }
