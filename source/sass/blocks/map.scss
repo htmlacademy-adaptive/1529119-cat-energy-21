@@ -5,14 +5,12 @@
 .map__contacts {
   max-width: 320px;
   height: 362px;
-  background-image: url("../img/map.png");
 }
 
 @media (min-width: $tablet-width) {
   .map__contacts {
     max-width: 768px;
     height: 400px;
-    background-image: url("../img/map-tablet.png");
   }
 }
 
@@ -21,7 +19,5 @@
     max-width: 1440px;
     height: 400px;
     position: relative;
-    background-image: url("../img/map-desktop.png");
-    background-repeat: no repeat;
   }
 }

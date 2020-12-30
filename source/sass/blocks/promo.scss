@@ -54,7 +54,7 @@
   background-color: $button-green;
   border: none;
   position: absolute;
-  top: 440px;
+  top: 420px;
   left: 0;
   font-size: 14px;
   line-height: 18px;
@@ -62,6 +62,9 @@
   color: $white;
   text-transform: uppercase;
   margin-left: 22px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -122,7 +125,7 @@
 
   .promo__site-button {
     width: 244px;
-    height: 54px;
+    height: 44px;
     font-size: 20px;
     line-height: 20px;
     font-weight: normal;
@@ -135,63 +138,64 @@
 
 @media (min-width: $desktop-width) {
   .promo__wrapper {
-    max-width: 1440px;
-    margin: 0;
+    min-width: 1440px;
+    margin-top: 145px;
     padding: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/cat-desktop-big.png");
+    background-position: 100% 100%;
+    background-size: auto;
+    margin-right: 0;
   }
 
   .promo__header {
-    width: 1440px;
-    height: 499px;
+    width: 1320px;
+    height: 694px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    position: relative;
-    border: none;
-    background-image: url("../img/cat-desktop-big.png");
-    background-position: bottom -60px right;
-    margin-top: 95px;
+    padding: 0;
+    background-color: $background-green;
+    margin-top: -140px;
+    margin-left: 120px;
+    margin-right: 0;
+    outline: 2px solid $background;
   }
 
   .promo__block1 {
-    width: 530px;
-    height: 499px;
-    margin-left: 190px;
+    width: 600px;
+    height: 700px;
+    background-color: $background;
+    padding: 0;
+    margin-top: 2px;
+    margin-left: 0;
   }
 
   .promo__block2 {
-    width: 720px;
-    height: 499px;
-    margin: 0;
-    background-image: none;
-    margin-top: -165px;
-    left: 720px;
-    background-color: $background-green;
-  }
-
-  .promo__block3 {
-    width: 552px;
-    height: 499px;
-    left: 550px;
-    top: 0;
-    position: absolute;
-    background-image: url("../img/bottle-desktop.png");
+    display: block;
+    background-image: url("../img/index-can.png");
+    margin-left: 420px;
+    margin-top: -40px;
   }
 
   .promo__slogan {
-    margin-top: 90px;
-    margin-bottom: 10px;
+    margin-top: 190px;
+    margin-left: 70px;
+    margin-bottom: 15px;
+  }
+
+  .promo__intro {
+    margin-left: 70px;
   }
 
   .promo__site-button {
     width: 244px;
-    height: 54px;
+    height: 44px;
     font-size: 20px;
     line-height: 20px;
     font-weight: normal;
     text-align: center;
     position: absolute;
-    top: 295px;
-    left: 168px;
+    top: 410px;
+    left: 50px;
   }
 }

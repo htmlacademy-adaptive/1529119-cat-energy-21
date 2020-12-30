@@ -159,7 +159,6 @@
     height: 52px;
     display: flex;
     flex-direction: row;
-    flex: wrap;
     font-size: 18px;
     line-height: 24px;
     align-items: center;
@@ -198,11 +197,16 @@
   }
 
   .page-header__logo {
-    width: 202px;
+    width: 600px;
+    height: 120px;
     border-bottom: none;
     cursor: pointer;
-    margin-top: 82px;
-    margin-left: 110px;
+    margin-top: 58px;
+    margin-left: 120px;
+    z-index: 1;
+    position: absolute;
+    background-color: $background;
+    text-align: center;
   }
 
   .navigation-main__toggle,
@@ -213,16 +217,19 @@
 
   .page-header__desktoplink {
     display: block;
+    margin-top: 38px;
   }
 
   .navigation-main__list {
-    width: 720px;
-    height: 200px;
+    width: 660px;
+    height: 120px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 408px;
-    background-color: $background-green;
+    justify-content: space-around;
+    position: absolute;
+    top: 60px;
+    left: 770px;
+    z-index: 1;
   }
 
   .site-list__item {
@@ -231,7 +238,7 @@
     line-height: 30px;
     font-family: $main-fonts;
     font-weight: 400;
-    margin-left: 45px;
+    margin-right: 10px;
 
     &:last-child {
       margin-right: 110px;
