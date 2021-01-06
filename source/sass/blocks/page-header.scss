@@ -196,6 +196,14 @@
     position: relative;
   }
 
+  .page-header__form {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1440px;
+  }
+
   .page-header__logo {
     width: 600px;
     height: 120px;
@@ -209,6 +217,15 @@
     text-align: center;
   }
 
+  .page-header__logo-form {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 202px;
+    height: 60px;
+    margin-left: -240px;
+  }
+
   .navigation-main__toggle,
   .page-header__list,
   .page-header__tabletlink {
@@ -217,7 +234,21 @@
 
   .page-header__desktoplink {
     display: block;
-    margin-top: 38px;
+  }
+
+  .navigation-main__form {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+  }
+
+  .navigation-main__list-form {
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    margin-left: -330px;
+    margin-top: -20px;
   }
 
   .navigation-main__list {
@@ -245,12 +276,25 @@
     }
   }
 
+  .site-list__item-form {
+    margin: 0;
+    padding: 0;
+  }
+
   .site-list__item a {
     color: $background;
   }
 
+  .site-list__item-form a {
+    color: $base-color-text;
+  }
+
   .site-list__item--active a {
     border-bottom: 2px solid $background;
+  }
+
+  .site-list__item-form--active a {
+    border-bottom: 2px solid $button-green;
   }
 }
 
