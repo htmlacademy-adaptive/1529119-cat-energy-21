@@ -300,6 +300,10 @@
 
 @media (max-width: $mobile-width-only) {
   .navigation-main__form {
+    display: block;
+  }
+
+  .navigation-main__list-form {
     display: none;
   }
 }
