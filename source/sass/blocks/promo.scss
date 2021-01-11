@@ -10,6 +10,12 @@
   background-repeat: no-repeat;
   position: relative;
   margin-top: -30px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-cat@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 
 .promo__block1 {
@@ -26,6 +32,12 @@
   left: 20px;
   background-image: url("../img/promo-bottle.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bottle@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 
 .promo__slogan {
@@ -121,6 +133,12 @@
     display: block;
     background-image: url("../img/bottle-tablet.png");
     margin-top: 20px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bottle-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   }
 
   .promo__site-button {
@@ -139,13 +157,20 @@
 @media (min-width: $desktop-width) {
   .promo__wrapper {
     min-width: 1440px;
-    margin-top: 145px;
+    margin-top: 140px;
     padding: 0;
     background-repeat: no-repeat;
     background-image: url("../img/cat-desktop-big.png");
     background-position: 100% 100%;
     background-size: auto;
     margin-right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-desktop-big@2x.png");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: 100% 100%;
+    }
   }
 
   .promo__header {
@@ -173,8 +198,16 @@
   .promo__block2 {
     display: block;
     background-image: url("../img/index-can.png");
-    margin-left: 420px;
+    margin-left: 423px;
     margin-top: -40px;
+    width: 552px;
+    height: 499px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can@2x.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   }
 
   .promo__slogan {
