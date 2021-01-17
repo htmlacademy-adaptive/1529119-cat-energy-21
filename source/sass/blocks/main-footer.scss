@@ -14,6 +14,12 @@
   margin-top: 36px;
   margin-bottom: 20px;
   margin-left: 96px;
+  width: 128px;
+  height: 24px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__line {
@@ -36,6 +42,8 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-left: -5px;
 }
 
 .main-footer__item {
@@ -43,62 +51,128 @@
 }
 
 .main-footer__html-logo {
-  width: 171px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 25px;
+  width: 281px;
   height: 34px;
-  margin-top: 22px;
-  margin-bottom: -10px;
-  margin-left: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__icon-vk {
+  display: block;
+  width: 26px;
+  height: 26px;
+  fill: $icon;
+
+  &:hover {
+    fill: $button-green;
+}
+
+&:active {
+  opacity: 0.3;
+}
+}
+
+.main-footer__icon-inst {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: $icon;
+
+  &:hover {
+    fill: $button-green;
+
+    &:active {
+      opacity: 0.3;
+    }
+}
+}
+
+//!проблема с контуром иконки
+
+.main-footer__icon-facebook {
+  display: block;
+  width: 20px;
+  height: 25px;
+  fill: $background-grey;
+
+  &:hover {
+    fill: $button-green;
+}
+
+&:active {
+  opacity: 0.3;
+}
+}
+
+.main-footer__icon-htmlacademy-text {
+  display: block;
+  width: 114px;
+  height: 18px;
+  margin-top: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__icon-htmlacademy-img {
+  display: block;
+  width: 27px;
+  height: 34px;
+  margin-top: 10px;
+  stroke: 2px solid black;
+
+  &:hover {
+    fill: $button-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     max-width: 768px;
     height: 150px;
-    background-color: $background-grey;
     padding: 0;
     margin: 0;
+    background-color: $background-grey;
   }
 
   .main-footer__block {
-    width: 708px;
-    height: 60px;
+    width: 768px;
+    height: 50px;
+    background-color: $background-grey;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 30px;
-    padding-top: 55px;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
   }
 
   .main-footer__img {
     margin: 0;
     padding: 0;
+    margin-top: 14px;
   }
 
   .main-footer__list {
-    width: 129px;
+    width: 159px;
     height: 33px;
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0;
-  }
-
-  .main-footer__item {
-    margin-left: -5px;
-    padding: 0;
-
-    &:nth-child(1) {
-      margin-top: 10px;
-    }
-
-    &:nth-child(2) {
-      margin-top: 10px;
-    }
-
-    &:nth-child(3) {
-      margin-top: 5px;
-    }
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
   }
 
   .main-footer__line {
@@ -106,12 +180,46 @@
   }
 
   .main-footer__html-logo {
-    width: 163px;
+    width: 221px;
     height: 34px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin: 0;
     padding: 0;
+  }
+
+  .main-footer__icon-vk {
+    width: 29px;
+    height: 27px;
+  }
+
+  .main-footer__icon-inst {
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+
+  .main-footer__icon-facebook {
+    width: 27px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: -4px;
+  }
+
+  .main-footer__icon-htmlacademy-text {
+    display: block;
+    width: 114px;
+    height: 18px;
+  }
+
+  .main-footer__icon-htmlacademy-img {
+    display: block;
+    width: 27px;
+    height: 34px;
   }
 }
 

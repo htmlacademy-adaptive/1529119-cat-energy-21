@@ -77,6 +77,14 @@
   text-decoration: none;
   text-align: center;
   padding-top: 20px;
+
+  &:hover {
+    background-color: $button-green-hover;
+  }
+
+  & span:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) {
