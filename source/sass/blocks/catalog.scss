@@ -98,6 +98,14 @@
   font-style: normal;
   border: none;
   margin-top: 50px;
+
+  &:hover {
+    background-color: $button-green-hover;
+  }
+
+  & span:active {
+    opacity: 0.5;
+  }
 }
 
 .catalog__button-container1 {
@@ -182,6 +190,13 @@
   font-family: $main-fonts;
   font-weight: 400;
   font-style: normal;
+  &:hover {
+    background-color: $button-grey-hover;
+  }
+
+  & span:active {
+    opacity: 0.5;
+  }
 }
 
 .catalog__show-products-line {

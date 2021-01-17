@@ -111,9 +111,23 @@
   text-transform: uppercase;
   border: none;
   background-color: $background-grey;
+  cursor: pointer;
 }
 
-.example__scale-tablet {
+.example__button span:hover {
+  border-bottom: 1px solid $radio;
+}
+
+.example__button span:active {
+  border-bottom: 1px solid $radio;
+}
+
+.example__button span {
+  border-bottom: 1px dashed $border-color;
+}
+
+.example__scale-tablet,
+.example__control {
   display: none;
 }
 
@@ -229,6 +243,9 @@
 
   .example__scale-tablet {
     display: block;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 7px;
   }
 
   .example__scale {
@@ -238,6 +255,7 @@
     align-items: center;
     margin-top: 410px;
     margin-left: 122px;
+    position: relative;
   }
 
   .example__img1,
@@ -251,7 +269,27 @@
     top: 360px;
     left: 40px;
   }
-}
+  //!доделать тень
+  .example__control {
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    display: block;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border-radius: 1em;
+    stroke: $border-color;
+
+    &:hover {
+      box-shadow: 0px 3px 0px 0px $special-grey;
+    }
+    &:active {
+      stroke: $button-green;
+    }
+    }
+  }
+
 
 @media (min-width: $desktop-width) {
   .example__container {
@@ -329,5 +367,13 @@
     top: 410px;
     text-align: start;
     left: 40px;
+  }
+
+  .example__control {
+    position: absolute;
+    top: 5px;
+    left: 220px;
+    display: block;
+    cursor: pointer;
   }
 }

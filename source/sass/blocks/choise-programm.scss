@@ -48,6 +48,9 @@
   font-family: $second-fonts;
   display: flex;
   justify-content: center;
+  margin-top: 12px;
+  margin-left: 25px;
+  margin-right: 12px;
 }
 
 .choise-programm__line {
@@ -69,6 +72,9 @@
   margin-right: 174px;
   margin-bottom: 22px;
   margin-left: 22px;
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .choise-programm__arrows {
@@ -91,9 +97,9 @@
   color: $special-grey;
   font-family: $second-fonts;
   display: flex;
-  margin-top: 22px;
-  margin-bottom: 23px;
+  margin-top: 12px;
   margin-left: 25px;
+  margin-right: 12px;
 }
 
 .choise-programm__h2-two {
@@ -115,6 +121,9 @@
   align-items: center;
   margin-top: 15px;
   margin-left: 22px;
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .choise-programm__img-tablet1,

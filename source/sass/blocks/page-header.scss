@@ -2,28 +2,49 @@
   @include center;
   font-family: $main-fonts;
   background-color: $background;
-  margin: 0;
-  padding: 0;
   position: relative;
 }
 
-.page-header__logo {
-  width: 320px;
+.page-header__logo-box-mobile {
+  max-width: 320px;
   height: 66px;
-  display: flex;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid $border-nav;
+  position: relative;
 }
 
-.page-header__list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
+.page-header__img2 {
+  position: absolute;
+  top: 25px;
+  left: 115px;
+
 }
 
-.page-header__item {
-  display: flex;
-  align-self: center;
+.page-header__logo-mobile-text {
+  width: 101px;
+  height: 18px;
 }
+
+.page-header__logo-mobile {
+  width: 34px;
+  height: 38px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+
+.page-header__logo-custom {
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+  }
+
 
 .navigation-main__toggle {
   position: absolute;
@@ -88,15 +109,6 @@
   display: none;
 }
 
-.page-header__img1 {
-  margin-left: -20px;
-  margin-right: 65px;
-}
-
-.page-header__img2 {
-  margin-right: 65px;
-}
-
 .navigation-main__list {
   width: 320px;
   height: 198px;
@@ -119,6 +131,13 @@
   width: 320px;
   height: 66px;
   border-bottom: 1px solid $border-nav;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .site-list__item a {
@@ -128,7 +147,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    max-width: 768px;
+    @include center;
     height: 54px;
     display: flex;
     margin-top: 10px;
@@ -141,6 +160,10 @@
     cursor: pointer;
     margin: 0;
     padding: 0;
+  }
+
+  .page-header__logo-box-mobile {
+    display: none;
   }
 
   .navigation-main__toggle,
@@ -188,12 +211,14 @@
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     display: flex;
+    @include center;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     position: relative;
     height: 100%;
+    margin-top: -2px;
   }
 
   .page-header__form {

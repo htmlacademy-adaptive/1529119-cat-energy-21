@@ -8,6 +8,9 @@
   </head>
 
   <body class="page-body">
+    <svg style="display: none">
+      <symbol></symbol>
+    </svg>
     <header class="page-header page-header__form">
       <div class="page-header__wrapper">
         <div class="page-header__logo page-header__logo-form">
@@ -139,7 +142,7 @@
                   value="Похудение"
                   checked
                 />
-                <label class="selection-program__text-radio" for="choise-one">похудение</label>
+                <label class="selection-program__text-radio" for="choise-one"><span>похудение</span></label>
                 <input
                   type="checkbox"
                   class="visually-hidden selection-program__radio selection-program__custom-radio"
@@ -147,7 +150,7 @@
                   id="choise-two"
                   value="Набор массы"
                 />
-                <label class="selection-program__text-radio" for="choise-two">Набор массы</label>
+                <label class="selection-program__text-radio" for="choise-two"><span>Набор массы</span></label>
                 <input
                   type="checkbox"
                   class="visually-hidden selection-program__custom-radio"
@@ -157,7 +160,7 @@
                 />
                 <label
                   class="selection-program__text-radio selection-program__text-radio-lost" for="choise-three"
-                  >Не знаю (нужен совет)</label
+                  ><span>Не знаю (нужен совет)</span></label
                 >
               </fieldset>
             </div>
@@ -178,19 +181,19 @@
                   >e-mail:*</label
                 >
                 <input
-                  type="email"
+                  type="email" pattern="^[A-Za-z]"
                   class="selection-program__input-email"
                   name="email"
                   id="email-form"
-                  placeholder="kuklachev@gmail.com"
+                  placeholder="kuklachev@gmail.com" disabled
                 />
                 <svg
                   class="selection-program__svg-email"
                   width="20"
                   height="14"
                   viewBox="0 0 20 14"
-                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
                 >
                   <line
                     x1="1.65"
@@ -329,14 +332,14 @@
                 id="vitamins"
               />
               <label class="selection-program__text-checkbox" for="vitamins"
-                >витамины</label
+                ><span>витамины</span></label
               >
             </fieldset>
 
             <div class="selection-program__block-button">
               <input
                 class="selection-program__button"
-                type="button"
+                type="submit"
                 value="отправить заявку"
               />
               <p class="selection-program__legend">* — Обязательные поля</p>
