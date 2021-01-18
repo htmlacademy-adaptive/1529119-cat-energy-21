@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Подбор программы Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <base href="https://htmlacademy-adaptive.github.io/1529119-cat-energy-21/19/">
+</head>
+
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo page-header__logo-form">
+          <a href="index.html" class="page-header__tabletlink">
+            <svg class="page-header__logo-custom">
+              <use xlink:href="sprites/sprite-index.svg#logo-tablet"></use>
+            </svg>
+          </a>
+          <a href="index.html" class="page-header__desktoplink">
+            <svg class="page-header__logo-custom">
+              <use xlink:href="sprites/sprite-index.svg#logo-desktop"></use>
+            </svg>
+          </a>
+
+          <div class="page-header__logo-box-mobile">
+            <a href="index.html" class="page-header__img1">
+              <svg class="page-header__logo-custom  page-header__logo-mobile">
+                <use xlink:href="sprites/sprite-index.svg#logo-mobile"></use>
+              </svg>
+            </a>
+            <a href="index.html" class="page-header__img2">
+              <svg class="page-header__logo-custom page-header__logo-mobile-text">
+                <use xlink:href="sprites/sprite-index.svg#logo-mobile-text"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <h2 class="visually-hidden">Главная навигация</h2>
+
+        <nav class="navigation-main navigation-main-form navigation-main--opened navigation-main--closed">
+          <ul class="navigation-main__list site-list navigation-main__list-form">
+            <li class="site-list__item site-list__item-form">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item-form">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item-form site-list__item-form--active site-list__item--active">
+              <a href="form.html">Подбор программ</a>
+            </li>
+          </ul>
+
+          <button class="navigation-main__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="selection-program">
+        <div class="selection-program__wrapper">
+          <div class="selection-program__title">
+            <h1 class="selection-program__h1">Подбор программы</h1>
+            <p class="selection-program__text">
+              Заполните анкету, и мы подберем<br />программу питания для вашего
+              кота
+            </p>
+          </div>
+          <form
+            class="selection-program__form"
+            action="https://echo.htmlacademy.ru"
+            method="get"
+          >
+            <div class="selection-program__box-desktop">
+              <fieldset class="selection-program__groupe1">
+                <div class="selection-program__groupe1-item">
+                  <label for="login-form" class="selection-program__label"
+                    >имя:*</label
+                  >
+                  <input
+                    type="text"
+                    class="selection-program__input-name"
+                    name="login"
+                    id="login-form"
+                    placeholder="барсик"
+                  />
+                </div>
+                <div class="selection-program__groupe1-item">
+                  <label for="weight-form" class="selection-program__label"
+                    >вес(кг):*</label
+                  >
+                  <input
+                    type="text"
+                    class="selection-program__input-weight"
+                    name="weight"
+                    id="weight-form"
+                    placeholder="7"
+                  />
+                </div>
+
+                <div class="selection-program__groupe1-item">
+                  <label for="years-form" class="selection-program__label"
+                    >возраст(лет):</label
+                  >
+                  <input
+                    type="text"
+                    class="selection-program__input-age"
+                    name="years"
+                    id="years-form"
+                    placeholder="7"
+                  />
+                </div>
+              </fieldset>
+              <div class="line"></div>
+
+              <fieldset class="selection-program__groupe2">
+                <input
+                  type="checkbox"
+                  class="visually-hidden selection-program__radio selection-program__custom-radio"
+                  name="choise-one"
+                  id="choise-one"
+                  value="Похудение"
+                  checked
+                />
+                <label class="selection-program__text-radio selection-program__text-radio--disabled" for="choise-one"><span>похудение</span></label>
+                <input
+                  type="checkbox"
+                  class="visually-hidden selection-program__custom-radio"
+                  name="choise-two"
+                  id="choise-two"
+                  value="Набор массы"
+                />
+                <label class="selection-program__text-radio" for="choise-two"><span>Набор массы</span></label>
+                <input
+                  type="checkbox"
+                  class="visually-hidden selection-program__custom-radio"
+                  name="choise-three"
+                  id="choise-three"
+                  value="Не знаю (нужен совет)"
+                />
+                <label
+                  class="selection-program__text-radio selection-program__text-radio-lost" for="choise-three"
+                  ><span>Не знаю (нужен совет)</span></label
+                >
+              </fieldset>
+            </div>
+            <div class="line"></div>
+            <div class="selection-program__title">
+              <div class="selection-program__wrapper-contacts">
+                <div class="selection-program__line-small selection-program__line-desktop-small"></div>
+                <h2 class="selection-program__h2">
+                  Контактные данные (владельца кота)
+                </h2>
+                <div class="selection-program__line-green-one selection-program__line-desktop"></div>
+              </div>
+            </div>
+
+            <fieldset class="selection-program__groupe3">
+              <div class="selection-program__groupe3-item">
+
+                <label for="email-form" class="selection-program__label"
+                  >e-mail:*</label
+                >
+                <input
+                  type="email" pattern="^[A-Za-z]"
+                  class="selection-program__input-email"
+                  name="email"
+                  id="email-form"
+                  placeholder="kuklachev@gmail.com" disabled
+                />
+
+                <svg class="selection-program__svg-email">
+                  <use xlink:href="sprites/sprite-form.svg#icon__email" disabled></use>
+                </svg>
+
+
+                <label for="phone-form" class="selection-program__label selection-program__label-form"
+                  >Телефон:*</label
+                >
+                <input
+                  type="tel"
+                  class="selection-program__input-phone"
+                  name="phone"
+                  id="phone-form"
+                  placeholder="8 (960) 900-60-90"
+                />
+
+                <svg class="selection-program__svg-phone">
+                  <use xlink:href="sprites/sprite-form.svg#icon__phone"></use>
+                </svg>
+
+              </div>
+
+              <div class="selection-program__title2">
+                <div class="selection-program__wrapper-comment">
+                  <div class="selection-program__line-small2 selection-program__line-desktop-small1"></div>
+                  <h2 class="selection-program__h2">Комментарий</h2>
+                  <div class="selection-program__line-green-two selection-program__line-desktop2"></div>
+                </div>
+              </div>
+              <textarea
+                class="selection-program__textarea"
+                name="comment"
+                id="comment-field"
+                cols="30"
+                rows="10"
+              >
+Расскажите обо всех повадках кота</textarea
+              >
+            </fieldset>
+
+            <div class="selection-program__title3">
+              <div class="selection-program__wrapper-other">
+                <div class="selection-program__line-small3 selection-program__line-desktop-small"></div>
+                <h2 class="selection-program__h2">Дополнительно</h2>
+                <div class="selection-program__line-green-three selection-program__line-desktop3"></div>
+              </div>
+            </div>
+            <fieldset class="selection-program__groupe4">
+              <input
+                type="checkbox"
+                class="selection-program__checkbox visually-hidden"
+                name="sweetener"
+                id="sweetener-choice"
+                checked
+              />
+              <label
+                class="selection-program__text-checkbox selection-program__text-checkbox--disabled"
+                for="sweetener-choice"
+                >сахарозаменитель</label
+              >
+              <input
+                type="checkbox"
+                class="selection-program__checkbox visually-hidden"
+                name="water"
+                id="water-choice"
+              />
+              <label class="selection-program__text-checkbox" for="water-choice"
+                >питьевая вода</label
+              >
+              <input
+                type="checkbox"
+                class="selection-program__checkbox visually-hidden"
+                name="milk"
+                id="milk-choice"
+              />
+              <label class="selection-program__text-checkbox" for="milk-choice"
+                >молоко</label
+              >
+              <input
+                type="checkbox"
+                class="selection-program__checkbox visually-hidden"
+                name="vitamins"
+                id="vitamins"
+              />
+              <label class="selection-program__text-checkbox" for="vitamins"
+                ><span>витамины</span></label
+              >
+            </fieldset>
+
+            <div class="selection-program__block-button">
+              <input
+                class="selection-program__button"
+                type="submit"
+                value="отправить заявку"
+              />
+              <p class="selection-program__legend">* — Обязательные поля</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты Cat Energy</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__invitation contacts__invitation-form">
+            <div class="contacts__block1">
+              <h3 class="contacts__h3">
+                приглашаем<br />
+                к сотрудничеству дилеров!
+              </h3>
+            </div>
+            <div class="contacts__block2">
+              <p class="contacts__text">
+                ул. Большая
+                Конюшенная, д. 19/8
+                </p>
+                <p class="contacts__text">
+                  Санкт-Петербург
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="map">
+        <div class="map__wrapper">
+          <div class="map__contacts">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871606279!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609016073020!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__block">
+          <svg class="main-footer__img">
+            <use xlink:href="sprites/sprite-index.svg#logo-cat-energy"></use>
+          </svg>
+          <div class="main-footer__line"></div>
+          <div class="main-footer__icons">
+            <ul class="main-footer__list">
+              <li class="main-footer__item">
+                <a href="www.vk.ru">
+                  <svg class="main-footer__icon-vk">
+                    <use xlink:href="sprites/sprite-index.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-footer__item">
+                <a href="www.instagram.com">
+
+                  <svg class="main-footer__icon-inst">
+                    <use xlink:href="sprites/sprite-index.svg#inst"></use>
+                  </svg>
+
+                </a>
+              </li>
+              <li class="main-footer__item">
+                <a href="www.facebook.com">
+                  <svg class="main-footer__icon-facebook">
+                    <use xlink:href="sprites/sprite-index.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__line"></div>
+          <div class="main-footer__html-logo">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                <svg class="main-footer__icon-htmlacademy-text">
+                  <use xlink:href="sprites/sprite-index.svg#htmlacademy-text"></use>
+                </svg>
+              </a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                <svg class="main-footer__icon-htmlacademy-img">
+                  <use xlink:href="sprites/sprite-index.svg#htmlacademy-img"></use>
+                </svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
