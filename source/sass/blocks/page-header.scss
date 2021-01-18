@@ -241,6 +241,7 @@
     position: absolute;
     background-color: $background;
     text-align: center;
+    display: none;
   }
 
   .page-header__logo-form {
@@ -249,26 +250,23 @@
     padding: 0;
     width: 202px;
     height: 60px;
-    margin-left: -740px;
-    margin-top: -20px;
+    margin: 0;
   }
 
   .navigation-main__toggle,
-  .page-header__list,
   .page-header__tabletlink {
     display: none;
   }
 
   .page-header__desktoplink {
     display: block;
-    margin-top: 50px;
-    margin-left: 0;
+    margin: 0;
+    margin-top: 30px;
   }
 
   .navigation-main__list-form {
     padding: 0;
     margin: 0;
-    margin-left: -750px;
   }
 
   .navigation-main__list {

@@ -86,6 +86,7 @@ input::placeholder {
   margin-top: 19px;
   margin-bottom: 14px;
   margin-left: 13px;
+  cursor: pointer;
 }
 
 .selection-program__input-weight {
@@ -95,6 +96,7 @@ input::placeholder {
   box-sizing: border-box;
   margin-bottom: 14px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .selection-program__input-age {
@@ -104,6 +106,7 @@ input::placeholder {
   box-sizing: border-box;
   margin-bottom: 24px;
   margin-left: 21px;
+  cursor: pointer;
 }
 
 .selection-program__groupe2 {
@@ -113,6 +116,11 @@ input::placeholder {
   margin-top: -10px;
   padding: 0;
 }
+
+.selection-program__groupe2:nth-child(3) {
+  margin-bottom: 25px;
+}
+
 
 .selection-program__text-radio {
   @include main-fonts;
@@ -129,10 +137,6 @@ input::placeholder {
   padding: 0;
 }
 
-.selection-program__groupe2:nth-child(3) {
-  margin-bottom: 25px;
-}
-
 .selection-program__custom-radio + label::before {
   content: "";
   position: absolute;
@@ -142,6 +146,10 @@ input::placeholder {
   height: 30px;
   border-radius: 1em;
   border: 1px solid $border-color;
+}
+
+.selection-program__text-radio--disabled {
+  opacity: 0.3;
 }
 
 .selection-program__custom-radio:checked + label::after {
@@ -197,9 +205,14 @@ input::placeholder {
   box-sizing: border-box;
   margin-bottom: 14px;
   margin-left: 12px;
+  cursor: pointer;
+  position: relative;
   &:disabled {
     background-color: #fff;
     border: 2px solid $special-grey;
+  }
+  &:invalid {
+    border: 2px solid $error;
   }
 }
 
@@ -210,27 +223,51 @@ input::placeholder {
   box-sizing: border-box;
   margin-bottom: 5px;
   margin-left: 12px;
+  cursor: pointer;
+  &:disabled {
+    background-color: #fff;
+    border: 2px solid $special-grey;
+  }
+  &:invalid {
+    border: 2px solid $error;
+  }
 }
 
 .selection-program__checkbox:disabled {
   opacity: 0.3;
 }
-
+//!Как сделать svg зеленой при disabled??
 .selection-program__svg-email {
+  display: block;
+  width: 20px;
+  height: 15px;
   position: absolute;
-  left: 260px;
-  top: 20px;
+  top: 23px;
+  left: 270px;
+  stroke: $stroke;
+  cursor: pointer;
   &:disabled {
-    stroke: green;
+    stroke: $button-green;
   }
+  &:invalid {
+    stroke: $error;
   }
-
-
+}
 
 .selection-program__svg-phone {
+  display: block;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  left: 262px;
-  top: 78px;
+  top: 80px;
+  left: 275px;
+  cursor: pointer;
+  &:disabled {
+    stroke: $button-green;
+  }
+  &:invalid {
+    stroke: $error;
+  }
 }
 
 .selection-program__line-green-two {
@@ -253,6 +290,7 @@ input::placeholder {
   color: $special-grey;
   text-transform: uppercase;
   text-align: center;
+
 }
 
 .selection-program__title3 {
@@ -282,6 +320,10 @@ input::placeholder {
 
 .selection-program__groupe4:first-child {
   margin-top: 10px;
+}
+
+.selection-program__text-checkbox--disabled {
+  opacity: 0.3;
 }
 
 .selection-program__checkbox + label::before {
