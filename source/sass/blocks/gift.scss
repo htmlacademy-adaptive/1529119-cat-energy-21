@@ -17,8 +17,9 @@
 }
 
 .gift__img {
-  margin-top: 56px;
-  margin-left: 101px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .gift__text {
@@ -31,7 +32,7 @@
   color: $background;
   text-align: center;
   margin-left: 60px;
-  margin-top: 40px;
+  margin-top: -15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,6 +57,8 @@
 
   .gift__img {
     margin: 0;
+    margin-top: 70px;
+    margin-left: -30px;
     padding: 0;
   }
 
@@ -67,6 +70,7 @@
     text-align: start;
     font-size: 16px;
     line-height: 20px;
+    margin-left: -200px;
   }
 }
 
@@ -96,6 +100,8 @@
   .gift__img {
     margin: 0;
     padding: 0;
+    margin-left: 170px;
+    margin-top: -10px;
   }
 
   .gift__text {
@@ -106,7 +112,7 @@
     text-align: center;
     font-size: 16px;
     line-height: 20px;
-    margin-top: -50px;
+    margin-top: -140px;
     margin-left: 0;
   }
 
