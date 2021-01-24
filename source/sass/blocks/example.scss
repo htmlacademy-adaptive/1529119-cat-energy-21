@@ -1,11 +1,13 @@
 .example__wrapper {
-  @include center;
+  min-width: 320px;
+  height: 705px;
+  background-color: $background-grey;
 }
 
 .example__container {
-  width: 320px;
-  height: 705px;
-  background-color: $background-grey;
+  @include center;
+  max-width: 320px;
+  height: 505px;
 }
 
 .example__background-tablet {
@@ -32,15 +34,17 @@
   width: 280px;
   height: 64px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .example__item-text {
-  width: 124px;
+  width: 114px;
   height: 56px;
   border: 1px solid $border-color;
   border-radius: 3px;
   margin-top: 5px;
-  margin-right: 15px;
   text-align: center;
 }
 
@@ -52,15 +56,19 @@
   color: $base-color-text;
   margin-top: 15px;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .example__text-min {
   font-size: 12px;
-  line-height: 12px;
   font-family: $second-fonts;
   font-weight: 400;
   color: $special-grey;
-  margin-top: 10px;
+  margin-top: -14px;
+  margin-left: 26px;
+  background-color: #fff;
+  width: 60px;
+  background-color: transparent;
 }
 
 .example__intro-slider {
@@ -69,15 +77,18 @@
   font-family: $main-fonts;
   font-weight: 400;
   color: $base-color-text;
-  margin-top: 15px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 17px;
+  margin: 0 auto;
+  padding-top: 35px;
 }
 
 .example__slider {
   width: 311px;
   height: 232px;
+  margin: 0;
+  padding: 0;
+  margin-top: 75px;
 }
 
 .example__list {
@@ -132,26 +143,37 @@
 }
 
 .example__img-tablethalf,
-.example__img-desktophalf {
+.example__img-desktophalf,
+.example__intro-slider--custom {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    margin-top: -36px;
+    margin-bottom: 40px;
+    height: 1081px;
+    background-color: $background-grey;
+  }
+  .example__wrapper {
+    min-width: 768px;
+    height: 550px;
+    background-color: $background;
+  }
+
   .example__container {
-    width: 768px;
-    height: 1000px;
+    max-width: 768px;
     display: flex;
     flex-direction: column;
     position: relative;
+    @include center;
   }
 
   .example__background-tablet {
     display: block;
-    width: 768px;
-    height: 500px;
-    background-color: $background;
     position: relative;
     margin: 0;
+    height: 400px;
   }
 
   .example__h2 {
@@ -160,6 +182,8 @@
     margin-left: 30px;
     margin-bottom: -20px;
     padding: 0;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .example__text {
@@ -179,9 +203,10 @@
   .example__module {
     width: 708px;
     height: 77px;
-    background-color: $background;
     margin-left: 30px;
     margin-top: 54px;
+    display: flex;
+    justify-content: start;
   }
 
   .example__item-text {
@@ -205,18 +230,18 @@
     font-size: 14px;
     line-height: 14px;
     text-align: center;
-    background-color: $background;
     width: 127px;
     height: 17px;
     padding: 0;
     margin-left: 17px;
     margin-top: -17px;
+    background-color: $background;
   }
 
   .example__min-tablet {
     width: 100px;
     height: 17px;
-    margin-left: 27px;
+    margin-left: 33px;
     padding: 0;
     margin-top: -17px;
   }
@@ -229,12 +254,15 @@
     font-weight: normal;
     text-align: right;
     position: absolute;
-    top: 225px;
+    top: 195px;
     left: 560px;
   }
 
   .example__slider {
     width: 708px;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: 30px;
   }
 
   .example__scale-mobile {
@@ -266,9 +294,10 @@
   .example__img-tablethalf {
     position: absolute;
     display: block;
-    top: 360px;
-    left: 40px;
+    top: 380px;
+    left: 70px;
   }
+
   //!доделать тень
   .example__control {
     position: absolute;
@@ -287,25 +316,30 @@
     &:active {
       stroke: $button-green;
     }
-    }
   }
-
+}
 
 @media (min-width: $desktop-width) {
+  .example {
+    background-color: $background-grey;
+    height: 400px;
+  }
+
+  .example__wrapper {
+    min-width: 1440px;
+    background-color: $background-grey;
+  }
+
   .example__container {
-    width: 1440px;
-    height: 600px;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
-    background-color: $background-grey;
-    margin-top: 180px;
     position: relative;
-    margin-bottom: -40px;
+    @include center;
   }
 
   .example__background-tablet {
-    width: 436px;
-    height: 417px;
+    width: 720px;
     margin-left: 110px;
     background-color: $background-grey;
   }
@@ -319,7 +353,11 @@
 
   .example__module {
     width: 400px;
-    background-color: $background-grey;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 0;
   }
 
   .example__img-tablethalf {
@@ -329,13 +367,14 @@
   .example__img-desktophalf {
     display: block;
     position: absolute;
-    top: -170px;
+    top: -180px;
     left: 680px;
   }
 
   .example__scale {
     margin-left: 180px;
     margin-top: 400px;
+    margin: 290px 0 0 -80px;
   }
 
   .example__button {
@@ -344,13 +383,10 @@
   }
 
   .example__h2 {
-    width: 325px;
-    height: 205px;
     font-size: 60px;
     line-height: 60px;
     position: absolute;
-    top: -180px;
-    left: -30px;
+    top: -250px;
   }
 
   .example__min-tablet,
@@ -359,14 +395,27 @@
   }
 
   .example__intro-slider {
-    position: absolute;
-    width: 436px;
+    display: none;
+  }
+
+  .example__intro-slider--custom {
+    width: 636px;
     height: 20px;
-    padding: 0;
-    margin: 0;
-    top: 410px;
-    text-align: start;
-    left: 40px;
+    display: block;
+    position: absolute;
+    top: 340px;
+    display: flex;
+
+    p {
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: normal;
+      font-family: $main-fonts;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      margin-right: 80px;
+    }
   }
 
   .example__control {

@@ -1,19 +1,10 @@
 .page-body {
-  max-width: 320px;
   margin: 0 auto;
   padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .page-body {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-body {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", arial, sans-serif;
+  color: $special-grey;
+  background-color: $background;
+  overflow-x: hidden;
 }

@@ -1,11 +1,15 @@
 .main-footer__wrapper {
+  min-width: 320px;
+  background-color: $background-grey;
+}
+
+.container {
+  max-width: 320px;
   @include center;
 }
 
 .main-footer__block {
-  width: 320px;
   height: 226px;
-  background-color: $background-grey;
   margin: 0;
   padding: 0;
 }
@@ -70,11 +74,11 @@
 
   &:hover {
     fill: $button-green;
-}
+  }
 
-&:active {
-  opacity: 0.3;
-}
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__icon-inst {
@@ -89,7 +93,7 @@
     &:active {
       opacity: 0.3;
     }
-}
+  }
 }
 
 //!проблема с контуром иконки
@@ -102,11 +106,11 @@
 
   &:hover {
     fill: $button-green;
-}
+  }
 
-&:active {
-  opacity: 0.3;
-}
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__icon-htmlacademy-text {
@@ -137,9 +141,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer__wrapper {
+  .container {
+    @include center;
     max-width: 768px;
-    height: 150px;
+  }
+
+  .main-footer__wrapper {
+    min-width: 768px;
     padding: 0;
     margin: 0;
     background-color: $background-grey;
@@ -147,15 +155,14 @@
 
   .main-footer__block {
     width: 768px;
-    height: 50px;
-    background-color: $background-grey;
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
-    padding-top: 50px;
+    margin-left: 0px;
   }
 
   .main-footer__img {
@@ -225,9 +232,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer__wrapper {
+  .container {
     max-width: 1440px;
-    height: 149px;
+    @include center;
+  }
+
+  .main-footer__wrapper {
+    min-width: 1440px;
+    height: 159px;
+    background-color: $background-grey;
+    margin: 0;
+    padding: 0;
   }
 
   .main-footer__block {
