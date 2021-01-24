@@ -115,7 +115,6 @@
     background-color: $background;
     position: relative;
     margin: 0 auto;
-    outline: 2px solid red;
   }
 
   .promo__header {
@@ -127,7 +126,7 @@
     padding: 0;
     position: relative;
     background-color: $background;
-    margin-left: -200px;
+    margin-left: 0px;
   }
 
   .promo__block-text {
@@ -167,7 +166,6 @@
     display: block;
     background-image: url("../img/bottle-tablet.png");
     margin-top: 40px;
-    margin-left: -100px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bottle-tablet@2x.png");
@@ -210,7 +208,7 @@
     background-color: $background;
     position: absolute;
     top: -40px;
-    left: -132px;
+    left: -335px;
   }
 
   .promo__block-bottle {
@@ -218,7 +216,7 @@
     background-image: url("../img/index-can.png");
     position: absolute;
     top: 110px;
-    left: 616px;
+    left: 526px;
     background-repeat: no-repeat;
   }
 
