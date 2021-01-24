@@ -4,8 +4,8 @@
 }
 
 .container {
-  max-width: 320px;
   @include center;
+  max-width: 320px;
 }
 
 .main-footer__block {
@@ -96,8 +96,6 @@
   }
 }
 
-//!проблема с контуром иконки
-
 .main-footer__icon-facebook {
   display: block;
   width: 20px;
@@ -162,7 +160,6 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-left: 0px;
   }
 
   .main-footer__img {
@@ -233,8 +230,8 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1440px;
     @include center;
+    max-width: 1440px;
   }
 
   .main-footer__wrapper {

@@ -66,7 +66,6 @@
   color: $special-grey;
   margin-top: -14px;
   margin-left: 26px;
-  background-color: #fff;
   width: 60px;
   background-color: transparent;
 }
@@ -155,6 +154,7 @@
     height: 1081px;
     background-color: $background-grey;
   }
+
   .example__wrapper {
     min-width: 768px;
     height: 550px;
@@ -162,11 +162,11 @@
   }
 
   .example__container {
+    @include center;
     max-width: 768px;
     display: flex;
     flex-direction: column;
     position: relative;
-    @include center;
   }
 
   .example__background-tablet {
@@ -206,7 +206,7 @@
     margin-left: 30px;
     margin-top: 54px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .example__item-text {
@@ -298,7 +298,6 @@
     left: 70px;
   }
 
-  //!доделать тень
   .example__control {
     position: absolute;
     top: 5px;
@@ -311,8 +310,9 @@
     stroke: $border-color;
 
     &:hover {
-      box-shadow: 0px 3px 0px 0px $special-grey;
+      box-shadow: 0 3px 0 0 $special-grey;
     }
+
     &:active {
       stroke: $button-green;
     }
@@ -331,11 +331,11 @@
   }
 
   .example__container {
+    @include center;
     max-width: 1440px;
     display: flex;
     flex-direction: row;
     position: relative;
-    @include center;
   }
 
   .example__background-tablet {
@@ -374,7 +374,6 @@
   .example__scale {
     margin-left: 180px;
     margin-top: 400px;
-    margin: 290px 0 0 -80px;
   }
 
   .example__button {
@@ -401,7 +400,6 @@
   .example__intro-slider--custom {
     width: 636px;
     height: 20px;
-    display: block;
     position: absolute;
     top: 340px;
     display: flex;

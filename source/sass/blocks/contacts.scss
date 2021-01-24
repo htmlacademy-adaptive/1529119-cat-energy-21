@@ -9,10 +9,10 @@
 }
 
 .contacts__invitation {
+  @include center;
   max-width: 320px;
   height: 114px;
   display: flex;
-  @include center;
 }
 
 .contacts__block1 {
@@ -54,20 +54,14 @@
   }
 
   .contacts__invitation {
-    max-width: 768px;
-    height: 114px;
-    display: flex;
     @include center;
-    margin-top: -40px;
-  }
-
-  .contacts__invitation {
-    width: 768px;
+    max-width: 768px;
     height: 201px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: -40px;
   }
 
   .contacts__block1,

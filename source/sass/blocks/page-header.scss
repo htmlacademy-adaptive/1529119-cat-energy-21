@@ -127,6 +127,7 @@
   width: 320px;
   height: 66px;
   border-bottom: 1px solid $border-nav;
+
   &:hover {
     opacity: 0.5;
   }
@@ -143,8 +144,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    max-width: 768px;
     @include center;
+    max-width: 768px;
     height: 54px;
     display: flex;
     margin-top: 20px;

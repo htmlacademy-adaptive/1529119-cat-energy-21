@@ -58,28 +58,6 @@
 .catalog__groupe-line::after {
   content: "";
   position: absolute;
-  top: 0px;
-  bottom: 0;
-  width: 100vw;
-  height: 1px;
-  background-color: $border-nav;
-  right: 50%;
-}
-
-.catalog__groupe-line::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 1px;
-  background-color: $border-nav;
-  left: 50%;
-}
-
-.catalog__groupe-line::after {
-  content: "";
-  position: absolute;
   top: 0;
   bottom: 0;
   width: 100vw;
@@ -109,7 +87,6 @@
   height: 30px;
   background-image: url("../img/plus.svg");
   background-size: cover;
-  -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -276,6 +253,7 @@
   font-family: $main-fonts;
   font-weight: 400;
   font-style: normal;
+
   &:hover {
     background-color: $button-grey-hover;
   }
@@ -301,6 +279,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     min-width: 768px;
+
     @include center;
     padding: 0;
   }
@@ -480,7 +459,6 @@
     height: 60px;
     background-image: url("../img/plus.svg");
     background-size: cover;
-    -webkit-transform: translate(-50%);
     transform: translate(-50%);
   }
 
@@ -527,8 +505,6 @@
   .catalog__h2-line::after,
   .catalog__h2-line::before,
   .catalog__groupe-line::after,
-  .catalog__groupe-line::before,
-  .catalog__groupe-line::after,
   .catalog__groupe-line::before {
     display: none;
   }
@@ -536,8 +512,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    min-width: 1440px;
     @include center;
+    min-width: 1440px;
   }
 
   .catalog__title {

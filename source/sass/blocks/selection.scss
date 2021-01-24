@@ -1,6 +1,6 @@
 .selection-program__wrapper {
-  max-width: 320px;
   @include center;
+  max-width: 320px;
 }
 
 .selection-program__h1 {
@@ -190,8 +190,6 @@ input::placeholder {
   position: absolute;
   top: 22px;
   right: calc(100% + 40px);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100vw;
   height: 3px;
@@ -213,8 +211,6 @@ input::placeholder {
   position: absolute;
   top: 150px;
   right: calc(100% + 40px);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100vw;
   height: 3px;
@@ -226,8 +222,6 @@ input::placeholder {
   position: absolute;
   top: 150px;
   left: 220px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100vw;
   height: 3px;
@@ -239,8 +233,6 @@ input::placeholder {
   position: absolute;
   top: 15px;
   right: calc(100% + 40px);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100vw;
   height: 3px;
@@ -252,8 +244,6 @@ input::placeholder {
   position: absolute;
   top: 15px;
   left: 220px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100vw;
   height: 3px;
@@ -277,10 +267,12 @@ input::placeholder {
   margin-left: 12px;
   cursor: pointer;
   position: relative;
+
   &:disabled {
-    background-color: #fff;
+    background-color: $background;
     border: 2px solid $special-grey;
   }
+
   &:invalid {
     border: 2px solid $error;
   }
@@ -294,10 +286,12 @@ input::placeholder {
   margin-bottom: 5px;
   margin-left: 12px;
   cursor: pointer;
+
   &:disabled {
-    background-color: #fff;
+    background-color: $background;
     border: 2px solid $special-grey;
   }
+
   &:invalid {
     border: 2px solid $error;
   }
@@ -316,9 +310,11 @@ input::placeholder {
   left: 270px;
   stroke: $stroke;
   cursor: pointer;
+
   &:disabled {
     stroke: $button-green;
   }
+
   &:invalid {
     stroke: $error;
   }
@@ -332,9 +328,11 @@ input::placeholder {
   top: 80px;
   left: 275px;
   cursor: pointer;
+
   &:disabled {
     stroke: $button-green;
   }
+
   &:invalid {
     stroke: $error;
   }
@@ -434,6 +432,7 @@ input::placeholder {
   color: $white;
   text-transform: uppercase;
   margin-bottom: 22px;
+
   &:hover {
     background-color: $button-green-hover;
   }
@@ -451,8 +450,8 @@ input::placeholder {
 
 @media (min-width: $tablet-width) {
   .selection-program__wrapper {
-    max-width: 768px;
     @include center;
+    max-width: 768px;
   }
 
   .selection-program__h1 {
@@ -606,8 +605,6 @@ input::placeholder {
     position: absolute;
     top: 22px;
     right: 740px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100vw;
     height: 3px;
@@ -631,8 +628,6 @@ input::placeholder {
     position: absolute;
     top: 180px;
     right: calc(100% + 40px);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100vw;
     height: 3px;
@@ -644,8 +639,6 @@ input::placeholder {
     position: absolute;
     top: 180px;
     left: 220px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100vw;
     height: 3px;
@@ -657,8 +650,6 @@ input::placeholder {
     position: absolute;
     top: 85px;
     right: calc(100% - 15px);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100vw;
     height: 3px;
@@ -670,8 +661,6 @@ input::placeholder {
     position: absolute;
     top: 85px;
     left: 320px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100vw;
     height: 3px;
@@ -841,9 +830,9 @@ input::placeholder {
 
   @media (min-width: $desktop-width) {
     .selection-program__wrapper {
+      @include center;
       padding: 0;
       margin: 0;
-      @include center;
       max-width: 1440px;
     }
 
@@ -928,8 +917,6 @@ input::placeholder {
       position: absolute;
       top: 22px;
       right: 1370px;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -951,8 +938,6 @@ input::placeholder {
       position: absolute;
       top: 170px;
       right: calc(100% + 40px);
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -964,8 +949,6 @@ input::placeholder {
       position: absolute;
       top: 170px;
       left: 270px;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -977,8 +960,6 @@ input::placeholder {
       position: absolute;
       top: 85px;
       right: calc(100% - 60px);
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -990,8 +971,6 @@ input::placeholder {
       position: absolute;
       top: 85px;
       left: 380px;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       width: 100vw;
       height: 3px;
