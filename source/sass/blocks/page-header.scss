@@ -15,22 +15,18 @@
   position: relative;
 }
 
-.page-header__img2 {
-  position: absolute;
-  top: 25px;
-  left: 115px;
-}
-
 .page-header__logo-mobile-text {
   width: 101px;
   height: 18px;
+  margin-left: 40px;
+  margin-top: 30px;
 }
 
 .page-header__logo-mobile {
   width: 34px;
   height: 38px;
-  margin-left: 20px;
-  margin-top: 15px;
+  margin-left: 30px;
+  margin-top: 0;
 }
 
 .page-header__logo-custom {
@@ -100,11 +96,6 @@
   }
 }
 
-.page-header__tabletlink,
-.page-header__desktoplink {
-  display: none;
-}
-
 .navigation-main__list {
   width: 320px;
   height: 198px;
@@ -161,7 +152,15 @@
     padding: 0;
   }
 
-  .page-header__logo-box-mobile {
+
+
+  .page-header__logo-mobile {
+    width: 174px;
+    height: 52px;
+    margin-top: 5px;
+  }
+
+  .page-header__logo-mobile-text {
     display: none;
   }
 
@@ -257,8 +256,8 @@
     height: 90px;
     border-bottom: none;
     cursor: pointer;
-    top: -10px;
-    left: -280px;
+    top: -20px;
+    left: -160px;
     z-index: 11;
     position: absolute;
     text-align: center;
@@ -271,8 +270,14 @@
     padding: 0;
     width: 202px;
     height: 60px;
-    margin: 0;
-    margin-left: 30px;
+    margin-left: 150px;
+  }
+
+  .page-header__logo-mobile {
+    width: 210px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -270px;
   }
 
   .navigation-main__toggle,
