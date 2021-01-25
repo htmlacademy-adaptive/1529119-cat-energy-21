@@ -65,7 +65,20 @@
   left: 40px;
 }
 
-.main-footer__vk {
+
+.main-footer__item svg,
+.main-footer__html-icon-text svg {
+  &:hover {
+    stroke: $button-green;
+    fill: $button-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__vk  {
   display: block;
   width: 26px;
   height: 26px;
@@ -169,6 +182,9 @@
   .main-footer__img {
     margin: 0;
     padding: 0;
+    &:hover {
+      opacity: 0.3;
+    }
   }
 
   .main-footer__list {

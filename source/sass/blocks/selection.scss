@@ -1049,13 +1049,16 @@ input::placeholder {
     .selection-program__svg-email {
       position: absolute;
       left: 530px;
-      top: 18px;
+      top: 24px;
+      &:hover {
+        stroke: $button-green;
+      }
     }
 
     .selection-program__svg-phone {
       position: absolute;
       left: 1195px;
-      top: 16px;
+      top: 24px;
     }
 
     .selection-program__textarea {
