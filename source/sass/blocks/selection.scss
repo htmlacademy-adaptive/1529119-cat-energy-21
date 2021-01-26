@@ -829,11 +829,22 @@ input::placeholder {
   }
 
   @media (min-width: $desktop-width) {
-    .selection-program__wrapper {
+    .selection-program {
       @include center;
+      width: 1440px;
+    }
+
+    .selection-program__wrapper {
+      min-width: 1440px;
       padding: 0;
       margin: 0;
-      max-width: 1440px;
+      margin-top: -50px;
+    }
+
+    .selection-program__title,
+    .selection-program__title2,
+    .selection-program__title3 {
+      margin-left: -55px;
     }
 
     .selection-program__h1 {
@@ -906,17 +917,13 @@ input::placeholder {
       margin-bottom: 75px;
     }
 
-    .selection-program__h2-contacts {
-      margin-top: 0;
-    }
-
     //!ЗЕЛЕНЫЕ ЛИНИИ ДЕСКТОП
 
     .selection-program__h2-contacts::before {
       content: "";
       position: absolute;
       top: 22px;
-      right: 1370px;
+      right: 1410px;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -927,7 +934,7 @@ input::placeholder {
       content: "";
       position: absolute;
       top: 20px;
-      left: 670px;
+      left: 690px;
       width: 100vw;
       height: 3px;
       background-color: $button-green;
@@ -936,8 +943,8 @@ input::placeholder {
     .selection-program__h2-comments::before {
       content: "";
       position: absolute;
-      top: 170px;
-      right: calc(100% + 40px);
+      top: 175px;
+      right: 1410px;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -947,8 +954,8 @@ input::placeholder {
     .selection-program__h2-comments::after {
       content: "";
       position: absolute;
-      top: 170px;
-      left: 270px;
+      top: 175px;
+      left: 240px;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -959,7 +966,7 @@ input::placeholder {
       content: "";
       position: absolute;
       top: 85px;
-      right: calc(100% - 60px);
+      right: 1410px;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -970,7 +977,7 @@ input::placeholder {
       content: "";
       position: absolute;
       top: 85px;
-      left: 380px;
+      left: 400px;
       display: inline-flex;
       width: 100vw;
       height: 3px;
@@ -1048,17 +1055,19 @@ input::placeholder {
 
     .selection-program__svg-email {
       position: absolute;
-      left: 530px;
-      top: 24px;
+      left: 535px;
+      top: 18px;
+
       &:hover {
         stroke: $button-green;
+        fill: $button-green;
       }
     }
 
     .selection-program__svg-phone {
       position: absolute;
       left: 1195px;
-      top: 24px;
+      top: 18px;
     }
 
     .selection-program__textarea {
