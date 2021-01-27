@@ -72,7 +72,7 @@
   fill: $icon;
 
   &:hover {
-    fill: $button-green;
+    stroke: $button-green;
   }
 
   &:active {
@@ -92,7 +92,7 @@
   fill: $icon;
 
   &:hover {
-    fill: $button-green;
+    stroke: $button-green;
 
     &:active {
       opacity: 0.3;
@@ -104,12 +104,10 @@
   display: block;
   width: 10px;
   height: 10px;
-  fill: $icon;
   margin-top: -15px;
 
   &:hover {
     fill: $button-green;
-    stroke: $button-green;
   }
 
   &:active {
@@ -233,24 +231,31 @@
     margin-right: 30px;
   }
 
-  .main-footer__icon-vk {
-    width: 29px;
-    height: 27px;
-  }
-
-  .main-footer__icon-inst {
-    width: 23px;
-    height: 23px;
-    margin-left: 10px;
-    margin-top: 4px;
-  }
-
-  .main-footer__icon-facebook {
+  .main-footer__html-icon {
+    display: block;
     width: 27px;
-    height: 30px;
-    padding: 0;
-    margin: 0;
-    margin-top: -4px;
+    height: 34px;
+    margin-top: -20px;
+
+    &:hover {
+      stroke: $button-green;
+      fill: $button-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-footer__html-text-icon {
+    display: block;
+    width: 114px;
+    height: 18px;
+    margin-top: -10px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -304,6 +309,83 @@
       margin-top: -340px;
       margin-left: 0;
       margin-right: 0;
+    }
+
+    .main-footer__vk {
+      display: block;
+      width: 30px;
+      height: 17px;
+      fill: $icon;
+      margin-top: -12px;
+      padding: 0;
+
+      &:hover {
+        stroke: $button-green;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    .main-footer__inst {
+      display: block;
+      width: 23px;
+      height: 23px;
+      fill: $icon;
+      padding: 0;
+      margin-left: 15px;
+
+      &:hover {
+        stroke: $button-green;
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .main-footer__fb {
+      display: block;
+      width: 13px;
+      height: 27px;
+      stroke: $icon;
+      margin-top: -15px;
+
+      &:hover {
+        stroke: $button-green;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    .main-footer__html-icon {
+      display: block;
+      width: 27px;
+      height: 34px;
+      margin-top: -20px;
+
+      &:hover {
+        stroke: $button-green;
+        fill: $button-green;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    .main-footer__html-text-icon {
+      display: block;
+      width: 114px;
+      height: 18px;
+      margin-top: -10px;
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }

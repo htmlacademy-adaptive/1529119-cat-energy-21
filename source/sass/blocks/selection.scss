@@ -312,7 +312,7 @@ input::placeholder {
   cursor: pointer;
 
   &:disabled {
-    stroke: $button-green;
+    fill: $button-green;
   }
 
   &:invalid {
@@ -330,11 +330,11 @@ input::placeholder {
   cursor: pointer;
 
   &:disabled {
-    stroke: $button-green;
+    fill: $button-green;
   }
 
   &:invalid {
-    stroke: $error;
+    fill: $error;
   }
 }
 

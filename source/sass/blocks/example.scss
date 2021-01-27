@@ -309,10 +309,6 @@
     border-radius: 1em;
     stroke: $border-color;
 
-    &:hover {
-      box-shadow: 0 3px 0 0 $special-grey;
-    }
-
     &:active {
       stroke: $button-green;
     }
