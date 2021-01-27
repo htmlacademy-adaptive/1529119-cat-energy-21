@@ -1,13 +1,18 @@
 .contacts__wrapper {
-  @include center;
+  min-width: 320px;
+  background-color: $background;
+}
+
+.contacts__wrapper-form {
+  min-width: 320px;
+  background-color: $background-grey;
 }
 
 .contacts__invitation {
-  width: 320px;
+  @include center;
+  max-width: 320px;
   height: 114px;
-  background-color: $background-grey;
   display: flex;
-  margin-top: -20px;
 }
 
 .contacts__block1 {
@@ -43,14 +48,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    min-width: 768px;
+    background-color: $background;
+  }
+
   .contacts__invitation {
-    width: 768px;
+    @include center;
+    max-width: 768px;
     height: 201px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: $background;
+    margin-top: -40px;
   }
 
   .contacts__block1,
@@ -101,6 +112,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
+    width: 1440px;
+    position: relative;
+  }
+
+  .contacts__wrapper-form {
     width: 1440px;
     position: relative;
   }

@@ -1,5 +1,6 @@
 .selection-program__wrapper {
   @include center;
+  max-width: 320px;
 }
 
 .selection-program__h1 {
@@ -42,7 +43,7 @@
   line-height: 18px;
   margin: 0;
   text-transform: uppercase;
-  }
+}
 
 input::placeholder {
   @include main-fonts;
@@ -121,7 +122,6 @@ input::placeholder {
   margin-bottom: 25px;
 }
 
-
 .selection-program__text-radio {
   @include main-fonts;
   font-size: 16px;
@@ -161,10 +161,14 @@ input::placeholder {
   height: 18px;
   border-radius: 1em;
   background-color: $button-green;
-  }
+}
+
+.selection-program__box-line {
+  min-width: 320px;
+}
 
 .selection-program__wrapper-contacts {
-  width: 301px;
+  min-width: 301px;
   height: 52px;
   display: block;
   position: relative;
@@ -181,13 +185,69 @@ input::placeholder {
   padding: 0;
 }
 
-.selection-program__line-green-one {
-  width: 79px;
-  height: 2px;
+.selection-program__h2-contacts::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: calc(100% + 40px);
+  display: inline-flex;
+  width: 100vw;
+  height: 3px;
   background-color: $button-green;
+}
+
+.selection-program__h2-contacts::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 220px;
+  width: 100vw;
+  height: 3px;
+  background-color: $button-green;
+}
+
+.selection-program__h2-comments::before {
+  content: "";
+  position: absolute;
+  top: 150px;
+  right: calc(100% + 40px);
+  display: inline-flex;
+  width: 100vw;
+  height: 3px;
+  background-color: $button-green;
+}
+
+.selection-program__h2-comments::after {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 220px;
+  display: inline-flex;
+  width: 100vw;
+  height: 3px;
+  background-color: $button-green;
+}
+
+.selection-program__h2-add::before {
+  content: "";
   position: absolute;
   top: 15px;
-  right: -9px;
+  right: calc(100% + 40px);
+  display: inline-flex;
+  width: 100vw;
+  height: 3px;
+  background-color: $button-green;
+}
+
+.selection-program__h2-add::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 220px;
+  display: inline-flex;
+  width: 100vw;
+  height: 3px;
+  background-color: $button-green;
 }
 
 .selection-program__groupe3 {
@@ -207,10 +267,12 @@ input::placeholder {
   margin-left: 12px;
   cursor: pointer;
   position: relative;
+
   &:disabled {
-    background-color: #fff;
+    background-color: $background;
     border: 2px solid $special-grey;
   }
+
   &:invalid {
     border: 2px solid $error;
   }
@@ -224,10 +286,12 @@ input::placeholder {
   margin-bottom: 5px;
   margin-left: 12px;
   cursor: pointer;
+
   &:disabled {
-    background-color: #fff;
+    background-color: $background;
     border: 2px solid $special-grey;
   }
+
   &:invalid {
     border: 2px solid $error;
   }
@@ -236,7 +300,7 @@ input::placeholder {
 .selection-program__checkbox:disabled {
   opacity: 0.3;
 }
-//!Как сделать svg зеленой при disabled??
+
 .selection-program__svg-email {
   display: block;
   width: 20px;
@@ -246,9 +310,11 @@ input::placeholder {
   left: 270px;
   stroke: $stroke;
   cursor: pointer;
+
   &:disabled {
     stroke: $button-green;
   }
+
   &:invalid {
     stroke: $error;
   }
@@ -262,21 +328,14 @@ input::placeholder {
   top: 80px;
   left: 275px;
   cursor: pointer;
+
   &:disabled {
     stroke: $button-green;
   }
+
   &:invalid {
     stroke: $error;
   }
-}
-
-.selection-program__line-green-two {
-  width: 148px;
-  height: 2px;
-  background-color: $button-green;
-  position: absolute;
-  top: 152px;
-  right: 0;
 }
 
 .selection-program__textarea {
@@ -290,21 +349,11 @@ input::placeholder {
   color: $special-grey;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .selection-program__title3 {
   position: relative;
   margin-bottom: 20px;
-}
-
-.selection-program__line-green-three {
-  width: 106px;
-  height: 2px;
-  background-color: $button-green;
-  position: absolute;
-  top: 17px;
-  right: 0;
 }
 
 .selection-program__wrapper-comment {
@@ -361,7 +410,7 @@ input::placeholder {
   user-select: none;
   margin-left: 55px;
   margin-top: 5px;
-  }
+}
 
 .selection-program__block-button {
   position: relative;
@@ -383,6 +432,7 @@ input::placeholder {
   color: $white;
   text-transform: uppercase;
   margin-bottom: 22px;
+
   &:hover {
     background-color: $button-green-hover;
   }
@@ -398,11 +448,12 @@ input::placeholder {
   padding-bottom: 16px;
 }
 
-.selection-program__line-small {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
+  .selection-program__wrapper {
+    @include center;
+    max-width: 768px;
+  }
+
   .selection-program__h1 {
     @include main-fonts;
     color: $base-color-text;
@@ -496,10 +547,6 @@ input::placeholder {
     margin-left: 21px;
   }
 
-  .line {
-    display: none;
-  }
-
   .selection-program__groupe2 {
     width: 630px;
     height: 196px;
@@ -544,16 +591,6 @@ input::placeholder {
     background-color: $button-green;
   }
 
-  .selection-program__line-small {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: $button-green;
-    position: absolute;
-    top: 22px;
-    left: -10px;
-  }
-
   .selection-program__h2 {
     font-size: 36px;
     line-height: 36px;
@@ -563,12 +600,71 @@ input::placeholder {
     padding: 0;
   }
 
-  .selection-program__line-green-one {
-    width: 145px;
-    height: 2px;
+  .selection-program__h2-contacts::before {
+    content: "";
     position: absolute;
-    left: 613px;
     top: 22px;
+    right: 740px;
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+    background-color: $button-green;
+  }
+
+  //!ЗЕЛЕНЫЕ ЛИНИИ ТАБЛЕТКА
+
+  .selection-program__h2-contacts::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 620px;
+    width: 100vw;
+    height: 3px;
+    background-color: $button-green;
+  }
+
+  .selection-program__h2-comments::before {
+    content: "";
+    position: absolute;
+    top: 180px;
+    right: calc(100% + 40px);
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+    background-color: $button-green;
+  }
+
+  .selection-program__h2-comments::after {
+    content: "";
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+    background-color: $button-green;
+  }
+
+  .selection-program__h2-add::before {
+    content: "";
+    position: absolute;
+    top: 85px;
+    right: calc(100% - 15px);
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+    background-color: $button-green;
+  }
+
+  .selection-program__h2-add::after {
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: 320px;
+    display: inline-flex;
+    width: 100vw;
+    height: 3px;
+    background-color: $button-green;
   }
 
   .selection-program__groupe3 {
@@ -661,14 +757,6 @@ input::placeholder {
     margin-left: 69px;
   }
 
-  .selection-program__line-green-three {
-    width: 426px;
-    height: 2px;
-    background-color: $button-green;
-    position: absolute;
-    top: 88px;
-  }
-
   .selection-program__groupe4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -741,9 +829,22 @@ input::placeholder {
   }
 
   @media (min-width: $desktop-width) {
+    .selection-program {
+      @include center;
+      width: 1440px;
+    }
+
     .selection-program__wrapper {
+      min-width: 1440px;
       padding: 0;
       margin: 0;
+      margin-top: -50px;
+    }
+
+    .selection-program__title,
+    .selection-program__title2,
+    .selection-program__title3 {
+      margin-left: -55px;
     }
 
     .selection-program__h1 {
@@ -814,6 +915,73 @@ input::placeholder {
       margin-left: 69px;
       margin-top: 38px;
       margin-bottom: 75px;
+    }
+
+    //!ЗЕЛЕНЫЕ ЛИНИИ ДЕСКТОП
+
+    .selection-program__h2-contacts::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 1410px;
+      display: inline-flex;
+      width: 100vw;
+      height: 3px;
+      background-color: $button-green;
+    }
+
+    .selection-program__h2-contacts::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 690px;
+      width: 100vw;
+      height: 3px;
+      background-color: $button-green;
+    }
+
+    .selection-program__h2-comments::before {
+      content: "";
+      position: absolute;
+      top: 175px;
+      right: 1410px;
+      display: inline-flex;
+      width: 100vw;
+      height: 3px;
+      background-color: $button-green;
+    }
+
+    .selection-program__h2-comments::after {
+      content: "";
+      position: absolute;
+      top: 175px;
+      left: 240px;
+      display: inline-flex;
+      width: 100vw;
+      height: 3px;
+      background-color: $button-green;
+    }
+
+    .selection-program__h2-add::before {
+      content: "";
+      position: absolute;
+      top: 85px;
+      right: 1410px;
+      display: inline-flex;
+      width: 100vw;
+      height: 3px;
+      background-color: $button-green;
+    }
+
+    .selection-program__h2-add::after {
+      content: "";
+      position: absolute;
+      top: 85px;
+      left: 400px;
+      display: inline-flex;
+      width: 100vw;
+      height: 3px;
+      background-color: $button-green;
     }
 
     .line {
@@ -887,14 +1055,19 @@ input::placeholder {
 
     .selection-program__svg-email {
       position: absolute;
-      left: 530px;
+      left: 535px;
       top: 18px;
+
+      &:hover {
+        stroke: $button-green;
+        fill: $button-green;
+      }
     }
 
     .selection-program__svg-phone {
       position: absolute;
       left: 1195px;
-      top: 16px;
+      top: 18px;
     }
 
     .selection-program__textarea {

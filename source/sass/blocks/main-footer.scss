@@ -1,13 +1,18 @@
 .main-footer__wrapper {
+  min-width: 320px;
+  background-color: $background-grey;
+}
+
+.container {
   @include center;
+  max-width: 320px;
 }
 
 .main-footer__block {
-  width: 320px;
   height: 226px;
-  background-color: $background-grey;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .main-footer__img {
@@ -33,54 +38,57 @@
 }
 
 .main-footer__icons {
-  width: 130px;
+  width: 230px;
   height: 22px;
   margin-bottom: 20px;
-  margin-left: 60px;
 }
 
 .main-footer__list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-left: -5px;
-}
-
-.main-footer__item {
-  margin-right: 30px;
-}
-
-.main-footer__html-logo {
+  margin-left: 80px;
+  padding: 0;
+  width: 150px;
   margin-top: 20px;
-  margin-bottom: 0;
-  margin-left: 25px;
-  width: 281px;
-  height: 34px;
+}
+
+.main-footer__html-logo-mobile {
+  width: 270px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 165px;
+  left: 30px;
 }
 
-.main-footer__icon-vk {
+.main-footer__vk {
   display: block;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 18px;
   fill: $icon;
 
   &:hover {
     fill: $button-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-&:active {
-  opacity: 0.3;
-}
+.vk {
+  width: 25px;
+  height: 25px;
 }
 
-.main-footer__icon-inst {
+.main-footer__inst {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: $icon;
 
   &:hover {
@@ -89,47 +97,47 @@
     &:active {
       opacity: 0.3;
     }
-}
+  }
 }
 
-//!проблема с контуром иконки
-
-.main-footer__icon-facebook {
+.main-footer__fb {
   display: block;
-  width: 20px;
-  height: 25px;
-  fill: $background-grey;
+  width: 10px;
+  height: 10px;
+  fill: $icon;
+  margin-top: -15px;
 
   &:hover {
     fill: $button-green;
-}
-
-&:active {
-  opacity: 0.3;
-}
-}
-
-.main-footer__icon-htmlacademy-text {
-  display: block;
-  width: 114px;
-  height: 18px;
-  margin-top: 20px;
+    stroke: $button-green;
+  }
 
   &:active {
     opacity: 0.3;
   }
 }
 
-.main-footer__icon-htmlacademy-img {
+.main-footer__html-icon {
   display: block;
   width: 27px;
   height: 34px;
-  margin-top: 10px;
-  stroke: 2px solid black;
+  margin-top: 20px;
 
   &:hover {
+    stroke: $button-green;
     fill: $button-green;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__html-text-icon {
+  display: block;
+  width: 114px;
+  height: 18px;
+  margin-top: 10px;
 
   &:active {
     opacity: 0.3;
@@ -137,58 +145,92 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer__wrapper {
+  .container {
+    @include center;
     max-width: 768px;
+  }
+
+  .main-footer__wrapper {
+    min-width: 768px;
     height: 150px;
     padding: 0;
-    margin: 0;
     background-color: $background-grey;
   }
 
   .main-footer__block {
-    width: 768px;
-    height: 50px;
-    background-color: $background-grey;
+    width: 700px;
+    height: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     align-items: center;
-    margin: 0;
+    margin-left: 34px;
     padding: 0;
-    padding-top: 50px;
   }
 
   .main-footer__img {
     margin: 0;
     padding: 0;
-    margin-top: 14px;
+
+    &:hover {
+      opacity: 0.3;
+    }
   }
 
   .main-footer__list {
-    width: 159px;
-    height: 33px;
+    width: 139px;
+    height: 35px;
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 50px;
   }
 
   .main-footer__line {
     display: none;
   }
 
-  .main-footer__html-logo {
-    width: 221px;
-    height: 34px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  .main-footer__vk {
+    display: block;
+    width: 30px;
+    height: 17px;
+    margin-top: -12px;
+    padding: 0;
+  }
+
+  .main-footer__inst {
+    display: block;
+    width: 23px;
+    height: 23px;
     margin: 0;
     padding: 0;
+    margin-left: 15px;
+  }
+
+  .main-footer__fb {
+    display: block;
+    width: 13px;
+    height: 27px;
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+  }
+
+  .main-footer__html-logo-mobile {
+    width: 200px;
+    height: 34px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: -320px;
+    margin-right: 30px;
   }
 
   .main-footer__icon-vk {
@@ -211,69 +253,57 @@
     margin-top: -4px;
   }
 
-  .main-footer__icon-htmlacademy-text {
-    display: block;
-    width: 114px;
-    height: 18px;
-  }
-
-  .main-footer__icon-htmlacademy-img {
-    display: block;
-    width: 27px;
-    height: 34px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-footer__wrapper {
-    max-width: 1440px;
-    height: 149px;
-  }
-
-  .main-footer__block {
-    width: 1440px;
-    height: 149px;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-  }
-
-  .main-footer__line {
-    display: none;
-  }
-
-  .main-footer__list {
-    width: 129px;
-    height: 33px;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin-left: 160px;
-  }
-
-  .main-footer__item {
-    margin: 0;
-    padding: 0;
-
-    &:nth-child(1) {
-      margin-top: 10px;
+  @media (min-width: $desktop-width) {
+    .container {
+      @include center;
+      max-width: 1440px;
     }
 
-    &:nth-child(2) {
-      margin-top: 10px;
+    .main-footer__wrapper {
+      min-width: 1440px;
+      height: 179px;
+      background-color: $background-grey;
+      padding: 0;
     }
 
-    &:nth-child(3) {
-      margin-top: 5px;
+    .main-footer__block {
+      width: 1440px;
+      height: 179px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
-  }
 
-  .main-footer__html-logo {
-    width: 163px;
-    height: 34px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 325px;
+    .main-footer__line {
+      display: none;
+    }
+
+    .main-footer__list {
+      width: 129px;
+      height: 33px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-footer__item {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-footer__html-logo-mobile {
+      width: 163px;
+      height: 44px;
+      display: flex;
+      position: relative;
+      margin-top: -340px;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
