@@ -157,6 +157,7 @@
   font-style: normal;
   border: none;
   margin-top: 50px;
+  cursor: pointer;
 
   &:hover {
     background-color: $button-green-hover;
@@ -253,6 +254,7 @@
   font-family: $main-fonts;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 
   &:hover {
     background-color: $button-grey-hover;
