@@ -89,6 +89,15 @@
   font-style: normal;
   border: none;
   margin-top: 35px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-green-hover;
+  }
+
+  & span:active {
+    opacity: 0.5;
+  }
 }
 
 .more-product__line-grey {

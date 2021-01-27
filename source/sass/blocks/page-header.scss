@@ -83,7 +83,9 @@
   background-image: url("../img/burger.svg");
 }
 
-.navigation-main__list {
+.navigation-main__list,
+.navigation-main__list-catalog,
+.navigation-main__list-form {
   width: 320px;
   height: 198px;
   list-style: none;
@@ -98,7 +100,9 @@
   padding: 0;
 }
 
-.site-list__item {
+.site-list__item,
+.site-list__item-form,
+.site-list__item-catalog {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +119,21 @@
   }
 }
 
+.site-list__item-catalog {
+  border-bottom: none;
+}
+
 .site-list__item a {
+  color: $base-color-text;
+  text-decoration: none;
+}
+
+.site-list__item-catalog a {
+  color: $base-color-text;
+  text-decoration: none;
+}
+
+.site-list__item-form a {
   color: $base-color-text;
   text-decoration: none;
 }
@@ -172,7 +190,8 @@
     margin-top: 5px;
   }
 
-  .navigation-main__list {
+  .navigation-main__list-catalog,
+  .navigation-main__list-form {
     width: 564px;
     height: 52px;
     display: flex;
@@ -180,14 +199,26 @@
     font-size: 18px;
     line-height: 24px;
     align-items: center;
-    margin-top: -5px;
   }
 
-  .site-list__item {
+  .navigation-main__list {
+    margin-top: -15px;
+    width: 564px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+  }
+
+  .site-list__item,
+  .site-list__item-form,
+  .site-list__item-catalog {
     border-bottom: none;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 0;
 
     &:first-child {
@@ -195,11 +226,33 @@
     }
   }
 
-  .site-list__item a {
+  .site-list__item-catalog  {
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 0;
+
+    &:first-child {
+      margin-right: -40px;
+    }
+  }
+
+  .site-list__item a,
+  .site-list__item-form a,
+  .site-list__item-catalog a {
     padding-bottom: 5px;
   }
 
   .site-list__item--active a {
+    border-bottom: 2px solid $button-green;
+  }
+
+  .site-list__item-form--active a {
+    border-bottom: 2px solid $button-green;
+  }
+
+  .site-list__item-catalog--active a {
     border-bottom: 2px solid $button-green;
   }
 }
@@ -221,7 +274,7 @@
     left: 50%;
     width: 50%;
     height: 696px;
-    background-color: rgba(104, 183, 56, 0.86);
+    background-color: rgba(104, 183, 56, 0.85);
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right;
@@ -293,11 +346,6 @@
     margin: 0;
   }
 
-  .navigation-main__list-form {
-    padding: 0;
-    margin: 0;
-  }
-
   .navigation-main__list {
     width: 700px;
     height: 120px;
@@ -306,8 +354,34 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 0;
+    top: -15px;
     left: 400px;
+    z-index: 11;
+  }
+
+  .navigation-main__list-catalog {
+    width: 700px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: -15px;
+    left: 370px;
+    z-index: 11;
+  }
+
+  .navigation-main__list-form {
+    width: 700px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 320px;
     z-index: 11;
   }
 
@@ -318,18 +392,9 @@
     font-family: $main-fonts;
     font-weight: 400;
     margin-right: 15px;
-    margin-top: 10px;
-
-    &:nth-child(1) {
-      margin-top: 10px;
-    }
-
-    &:nth-child(2) {
-      margin-top: 10px;
-    }
+    margin-top: -15px;
 
     &:last-child {
-      margin-top: 10px;
       margin-right: 90px;
     }
   }
@@ -337,16 +402,16 @@
   .site-list__item-form {
     margin: 0;
     padding: 0;
-    margin-top: -5px;
     margin-left: 25px;
-  }
-
-  .site-list__item a {
-    color: $background;
+    color: $base-color-text;
   }
 
   .site-list__item-form a {
     color: $base-color-text;
+  }
+
+  .site-list__item a {
+    color: $background;
   }
 
   .site-list__item--active a {

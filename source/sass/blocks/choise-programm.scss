@@ -85,6 +85,10 @@
   font-size: 16px;
   line-height: 16px;
   font-family: $main-fonts;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .choise-programm__block3 {
